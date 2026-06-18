@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DefaultTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:maxHeight">5px</item>
+        <item name="android:maxLines">1</item>
+
+    </style>
+</resources>

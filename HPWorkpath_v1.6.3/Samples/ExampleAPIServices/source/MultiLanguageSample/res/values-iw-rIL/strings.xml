@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">גע כדי להפעיל (he-IL)</string>
+    <string name="sub_app_name">גע כדי להפעיל (Sub)(he-IL)</string>
+    <string name="config_app_name">גע כדי להפעיל (Config)(he-IL)</string>
+
+    <string name="description">נקה את הגדרת המחדל ב\'הגדרות מערכת\' &lt;‏ Google Apps‏ &lt; \'הורדות\'.</string>
+    <string name="button">בחר שיטת הזנה</string>
+    <string name="message">מחובר אל <xliff:g id="SESSION">%s</xliff:g>. גע כדי לנהל את הרשת.</string>
+</resources>

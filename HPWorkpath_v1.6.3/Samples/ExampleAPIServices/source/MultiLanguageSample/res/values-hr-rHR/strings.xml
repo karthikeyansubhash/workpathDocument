@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Dodirnite za omogućavanje.(hr-HR)</string>
+    <string name="sub_app_name">Dodirnite za omogućavanje. (Sub)(hr-HR)</string>
+    <string name="config_app_name">Dodirnite za omogućavanje. (Config)(hr-HR)</string>
+
+    <string name="description">Izbrisati zadano u Postavkama sustava &gt; Aplikacije &gt; Preuzimanja.</string>
+    <string name="button">Odabir načina unosa</string>
+    <string name="message">Povezan sa sesijom <xliff:g id="SESSION">%s</xliff:g>. Dodirnite za upravljanje mrežom.</string>
+</resources>

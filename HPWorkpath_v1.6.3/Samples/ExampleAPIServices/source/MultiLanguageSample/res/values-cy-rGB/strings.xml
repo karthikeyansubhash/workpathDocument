@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Cyffwrdd i alluogi.(cy-GB)</string>
+    <string name="sub_app_name">Cyffwrdd i alluogi. (Is)(cy-GB)</string>
+    <string name="config_app_name">Cyffwrdd i alluogi. (Config)(cy-GB)</string>
+
+    <string name="description">Dileu\'r rhagosodiad yn Gosodiadau\'r System > Apiau > Lawrlwythiadau</string>
+    <string name="button">Dewis dull mewnbwn</string>
+    <string name="message">Wedi\'i gysylltu â <xliff:g id="session" example="office">%s</xliff:g>. Cyffwrdd i reoli\'r rhwydwaith.</string>
+</resources>

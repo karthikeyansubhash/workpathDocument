@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Ota käyttöön koskettamalla.(fi-FI)</string>
+    <string name="sub_app_name">Ota käyttöön koskettamalla. (Sub)(fi-FI)</string>
+    <string name="config_app_name">Ota käyttöön koskettamalla. (Config)(fi-FI)</string>
+
+    <string name="description">Poista oletusasetus kohdassa Järjestelmäasetukset &gt; Sovellukset &gt; Ladattu.</string>
+    <string name="button">Valitse syöttötapa</string>
+    <string name="message">Yhdistetty: <xliff:g id="SESSION">%s</xliff:g>. Hallinnoi verkkoa koskettamalla.</string>
+</resources>

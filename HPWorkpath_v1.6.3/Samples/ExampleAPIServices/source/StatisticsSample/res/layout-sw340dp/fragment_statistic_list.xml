@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:tag="Screen_4.3_Inch">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutCategory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/adapter_height"
+            android:background="@color/option_background_color"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="@dimen/width_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/seq"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="@dimen/width_0"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/jobId"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="@dimen/width_0"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/jobCategory"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="@dimen/width_0"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/jobName"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/jobInfoListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layoutBottom"
+            android:layout_below="@+id/layoutCategory"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="@dimen/recycler_scrollbar"
+            android:scrollbars="vertical"
+            app:reverseLayout="true"
+            app:stackFromEnd="true" />
+
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonbar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/action_bar_color"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/button_margin"
+            android:paddingEnd="@dimen/button_margin"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/getLastJobInfoButton"
+                android:layout_width="@dimen/height_0"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/get_last_job_info"
+                android:textColor="@color/footer_text_color"
+                android:textSize="@dimen/button_textsize" />
+
+            <Button
+                android:id="@+id/commitButton"
+                android:layout_width="@dimen/height_0"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/commit"
+                android:textColor="@color/footer_text_color"
+                android:textSize="@dimen/button_textsize" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_45"
+        android:src="@drawable/ic_settings"
+        app:elevation="@dimen/evevation"
+        app:fabSize="mini" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

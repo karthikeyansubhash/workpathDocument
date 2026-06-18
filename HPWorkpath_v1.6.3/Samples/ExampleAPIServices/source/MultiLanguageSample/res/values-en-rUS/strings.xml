@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Touch to enable.(en-US)</string>
+    <string name="sub_app_name">Touch to enable. (Sub)(en-US)</string>
+    <string name="config_app_name">Touch to enable. (Config)(en-US)</string>
+
+    <string name="description">Clear default in System settings &gt; Apps &gt; Downloaded.</string>
+    <string name="button">Choose input method</string>
+    <string name="message">Connected to <xliff:g id="session" example="office">%s</xliff:g>. Touch to manage the network.</string>
+</resources>

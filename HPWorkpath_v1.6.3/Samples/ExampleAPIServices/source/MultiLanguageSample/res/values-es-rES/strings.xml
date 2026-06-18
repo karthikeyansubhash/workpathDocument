@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Toca para habilitar.(es-ES)</string>
+    <string name="sub_app_name">Toca para habilitar. (Sub)(es-ES)</string>
+    <string name="config_app_name">Toca para habilitar. (Config)(es-ES)</string>
+
+    <string name="description">Para borrar los valores predeterminados, accede a Ajustes del sistema &gt; Aplicaciones &gt; Descargadas.</string>
+    <string name="button">Seleccionar método de introducción</string>
+    <string name="message">Conectado a <xliff:g id="SESSION">%s</xliff:g>. Toca para administrar la red.</string>
+</resources>

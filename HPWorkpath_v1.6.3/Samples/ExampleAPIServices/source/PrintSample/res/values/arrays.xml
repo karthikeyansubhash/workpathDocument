@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_default_entries">
+        <item>DEFAULT</item>
+    </string-array>
+    <string-array name="pref_auto_entries">
+        <item>AUTO</item>
+    </string-array>
+    <string-array name="pref_Source_entries">
+        <item>STORAGE</item>
+    </string-array>
+    <string-array name="pref_empty_entries"/>
+
+    <string-array name="batch_backgroundjob">
+        <item>Foreground</item>
+        <item>Background</item>
+    </string-array>
+
+    <string-array name="batch_stream">
+        <item>Foreground</item>
+    </string-array>
+
+</resources>

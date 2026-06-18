@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Print Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="service_not_supported">PrinterService is not supported</string>
+    <string name="mass_storage_not_supported">MassStorageService is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="permission_not_granted">Permission is not granted, please reinstall the app!</string>
+    <string name="capabilities_not_available">Capabilities are not available</string>
+    <string name="capabilities_not_loaded">Please press \"Get Capabilities\" before submitting a job</string>
+    <string name="error_select_file">File selection error</string>
+    <string name="job_id">Job ID: %s</string>
+
+    <!-- UI elements text -->
+    <string name="print_text">Print</string>
+    <string name="cancel">Cancel</string>
+    <string name="load_caps_button">Get Capabilities</string>
+    <string name="load_defaults_button">Get Defaults</string>
+    <string name="get_status_button">Get Status</string>
+    <string name="get_tray_info_button">Get TrayInfo</string>
+    <string name="pref_show_settings">Settings UI</string>
+    <string name="pref_show_job_progress">Show Job Progress</string>
+    <string name="getjobinfo_button">Get Job Info</string>
+    <string name="select_file">Select File</string>
+    <string name="succeed">Succeed</string>
+    <string name="ok">OK</string>
+    <string name="na">N/A</string>
+    <string name="addtobatch">Add to Batch Job</string>
+    <string name="listbatchjob">List Batch Job</string>
+
+    <!-- Document Format Items -->
+    <string name="pref_copies">Copies</string>
+    <string name="pref_color_mode">Color Mode</string>
+    <string name="pref_default_value">DEFAULT</string>
+    <string name="pref_auto_value">AUTO</string>
+    <string name="pref_duplex_mode">Duplex Mode</string>
+    <string name="pref_staple_mode">Staple Mode</string>
+    <string name="pref_collate_mode">Collate Mode</string>
+    <string name="pref_paper_source">Paper Source</string>
+    <string name="pref_paper_size">Paper Size</string>
+    <string name="pref_paper_type">Paper Type</string>
+    <string name="pref_doc_format">Document Format</string>
+    <string name="pref_monitoring_job">Monitoring Job</string>
+    <string name="pref_source">Source to print</string>
+    <string name="pref_Source_default">STORAGE</string>
+    <string name="pref_source_storage">Print from Storage Attributes</string>
+    <string name="pref_source_http">Print from HTTP Attributes</string>
+    <string name="pref_source_usb">Print From USB Attributes</string>
+    <string name="pref_source_stream">Print From Stream Attributes</string>
+    <string name="pref_uri">HTTP URL</string>
+    <string name="pref_uri_username">URL Username</string>
+    <string name="pref_uri_password">URL Password</string>
+    <string name="pref_usb_storage">USB Storage</string>
+    <string name="pref_job_name">Job Name</string>
+    <string name="pref_filename">File Name</string>
+    <string name="pref_usb_filename">File Path</string>
+    <string name="pref_stream_filename">File Path to stream</string>
+    <string name="pref_autoFit">Auto Fit</string>
+    <string name="category_attrs">Base Print Attributes</string>
+    <string name="category_feedback">Feedback</string>
+    <string name="category_print_status">Print Status</string>
+    <string name="category_tray_status">Tray Status</string>
+    <string name="pref_copy_test_page">Copy Test Page</string>
+    <string name="pref_orientation">Orientation</string>
+    <string name="pref_print_quality">Print Quality</string>
+    <string name="pref_output_bin">Output Bin</string>
+    <string name="pref_start_pageRanges">Start Page Ranges</string>
+    <string name="pref_end_pageRanges">End Page Ranges</string>
+    <string name="pref_finishings">Finishings</string>
+
+    <!-- Messages -->
+    <string name="received_complete_intent">Monitoring Job: received Completed intent</string>
+    <string name="loaded_caps">Capabilities were loaded and applied to available options</string>
+    <string name="title_format">\ [%1$d, %2$d]</string>
+    <string name="no_job_info">No job information</string>
+    <string name="job_completed">Print job completed. Job name: %s</string>
+    <string name="job_cancelled">Print job cancelled</string>
+    <string name="job_failed">Print job failed</string>
+    <string name="empty_directory">Empty Directory</string>
+    <string name="test_page_copied">Test page copied in internal storage</string>
+    <string name="no_jobs_added">No jobs are added to list</string>
+    <string name="batch_job_list">Batch job list</string>
+    <string name="done">DONE</string>
+    <string name="remove">REMOVE</string>
+    <string name="files_removed">Files removed from batch</string>
+    <string name="select_atleast_one_job">Select atleast one job to remove</string>
+
+</resources>

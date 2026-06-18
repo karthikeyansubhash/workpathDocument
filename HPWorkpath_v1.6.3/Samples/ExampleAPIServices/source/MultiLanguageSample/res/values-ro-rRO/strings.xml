@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Atingeţi pentru activare.(ro-RO)</string>
+    <string name="sub_app_name">Atingeţi pentru activare. (Sub)(ro-RO)</string>
+    <string name="config_app_name">Atingeţi pentru activare. (Config)(ro-RO)</string>
+
+    <string name="description">Ştergeţi setările prestabilite din Setări de sistem &gt; Aplicaţii &gt; Descărcate.</string>
+    <string name="button">Alegeţi metoda de introducere</string>
+    <string name="message">Conectat la <xliff:g id="SESSION">%s</xliff:g>. Atingeţi pentru a gestiona reţeaua.</string>
+</resources>

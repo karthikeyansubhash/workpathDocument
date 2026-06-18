@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:tag="Screen_8_Inch">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/default_line_color"
+            android:padding="@dimen/inner_layout_title_padding"
+            android:text="@string/configuration"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <CheckBox
+            android:id="@+id/disableAuthorizationCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/disable_authorization"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleLayout"
+        android:layout_above="@id/buttonBar"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/guestPermissionSetLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/inner_layout_padding"
+                        android:paddingBottom="@dimen/inner_layout_padding"
+                        android:text="@string/guest_permission_set"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/guestPermissionSetScrollView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_10"
+                        android:layout_weight="15">
+
+                        <LinearLayout
+                            android:id="@+id/guestPermissionSetInnerLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                    <CheckBox
+                        android:id="@+id/guestPermissionSetCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/nullString"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+                <RelativeLayout
+                    android:id="@+id/addNewPermissionToGuestPermissionSetLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector"
+                    android:clickable="true"
+                    android:paddingTop="@dimen/margin_5"
+                    android:paddingBottom="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/add_new_permission_to_guest_permission_set"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/addNewPermissionToGuestPermissionSetCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/enable"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+
+                <View style="@style/BodyLine" />
+
+                <RelativeLayout
+                    android:id="@+id/enableSignInChoiceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector"
+                    android:clickable="true"
+                    android:paddingTop="@dimen/margin_5"
+                    android:paddingBottom="@dimen/margin_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/enable_sign_in_choice"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/enableSignInChoiceCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/enable"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+
+                <View style="@style/BodyLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:paddingTop="@dimen/inner_layout_padding"
+                        android:paddingBottom="@dimen/inner_layout_padding"
+                        android:text="@string/default_sign_in_method"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/defaultSignInMethodEditText"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_10"
+                        android:layout_weight="15"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/uuid"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_5"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:text="@string/guest_user_overrides"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <CheckBox
+                    android:id="@+id/guestUserOverridesCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/nullString"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+
+            <View style="@style/HeaderLine" />
+
+            <LinearLayout
+                android:id="@+id/guestUserOverridesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/inner_layout_padding"
+                    android:paddingEnd="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/from"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/fromAddressEditText"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:hint="@string/address"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/fromNameEditText"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:hint="@string/name"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/inner_layout_padding"
+                    android:paddingEnd="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:id="@+id/toTextView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/to"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/toScrollView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15">
+
+                        <LinearLayout
+                            android:id="@+id/toListLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                    <Button
+                        android:id="@+id/addToButton"
+                        android:layout_width="@dimen/margin_50"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/add_mark"
+                        android:textSize="@dimen/add_button_text_size" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/inner_layout_padding"
+                    android:paddingEnd="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:id="@+id/ccTextView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/cc"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/ccScrollView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15">
+
+                        <LinearLayout
+                            android:id="@+id/ccListLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                    <Button
+                        android:id="@+id/addCcButton"
+                        android:layout_width="@dimen/margin_50"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/add_mark"
+                        android:textSize="@dimen/add_button_text_size" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/inner_layout_padding"
+                    android:paddingEnd="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:id="@+id/bccTextView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/bcc"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/bccScrollView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15">
+
+                        <LinearLayout
+                            android:id="@+id/bccListLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                    <Button
+                        android:id="@+id/addBccButton"
+                        android:layout_width="@dimen/margin_50"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/add_mark"
+                        android:textSize="@dimen/add_button_text_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/BodyLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/inner_layout_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/inner_layout_padding"
+                    android:paddingBottom="@dimen/inner_layout_padding"
+                    android:text="@string/subject"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/subjectEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <View style="@style/BodyLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/inner_layout_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/inner_layout_padding"
+                    android:paddingBottom="@dimen/inner_layout_padding"
+                    android:text="@string/message"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/messageEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <View style="@style/BodyLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/inner_layout_padding">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/inner_layout_padding"
+                        android:paddingBottom="@dimen/inner_layout_padding"
+                        android:text="@string/fax_company_name"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/faxCompanyNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/inner_layout_padding"
+                        android:paddingBottom="@dimen/inner_layout_padding"
+                        android:text="@string/fax_billing_code"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/faxBillingCodeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/BodyLine" />
+
+            <LinearLayout
+                android:id="@+id/permissionToSignInMethodMapLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:paddingTop="@dimen/inner_layout_padding"
+                    android:paddingBottom="@dimen/inner_layout_padding"
+                    android:text="@string/permission_to_sign_in_method_map"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/margin_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:layout_weight="15"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/permissionIdEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/uuid"
+                            android:maxLines="1" />
+
+                        <EditText
+                            android:id="@+id/signInMethodIdEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/uuid"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:id="@+id/permissionToSignInMethodMapScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/permissionToSignInMethodMapInnerLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/permissionToSignInMethodMapButton"
+                        android:layout_width="@dimen/margin_50"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/add_mark"
+                        android:textSize="@dimen/add_button_text_size"/>
+
+                    <CheckBox
+                        android:id="@+id/permissionToSignInMethodMapCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/nullString"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/BodyLine" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/getConfigurationButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/get_configuration" />
+
+        <Button
+            android:id="@+id/setConfigurationButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/set_configuration" />
+
+        <Button
+            android:id="@+id/getPermissionButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/get_permissions" />
+
+        <Button
+            android:id="@+id/getSignInMethodButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/get_sign_in_methods" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

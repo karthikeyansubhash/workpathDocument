@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">แตะเพื่อเปิดใช้งาน (th-TH)</string>
+    <string name="sub_app_name">แตะเพื่อเปิดใช้งาน (Sub)(th-TH)</string>
+    <string name="config_app_name">แตะเพื่อเปิดใช้งาน (Config)(th-TH)</string>
+
+    <string name="description">ล้างค่าเริ่มต้นในการตั้งค่าระบบ &gt; แอปพลิเคชัน &gt; ดาวน์โหลด</string>
+    <string name="button">เลือกวิธีการป้อนข้อมูล</string>
+    <string name="message">เชื่อมต่อกับ <xliff:g id="SESSION">%s</xliff:g> แตะเพื่อจัดการเครือข่าย</string>
+</resources>

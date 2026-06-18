@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Raak aan om in te schakelen.(nl-NL)</string>
+    <string name="sub_app_name">Raak aan om in te schakelen. (Sub)(nl-NL)</string>
+    <string name="config_app_name">Raak aan om in te schakelen. (Config)(nl-NL)</string>
+
+    <string name="description">Standaardinstelling wissen via Systeeminstellingen &gt; Apps &gt; Gedownload.</string>
+    <string name="button">Invoermethode selecteren</string>
+    <string name="message">Verbonden met <xliff:g id="SESSION">%s</xliff:g>. Tik om het netwerk te beheren.</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Нажмите, чтобы включить.(ru-RU)</string>
+    <string name="sub_app_name">Нажмите, чтобы включить. (Sub)(ru-RU)</string>
+    <string name="config_app_name">Нажмите, чтобы включить. (Config)(ru-RU)</string>
+
+    <string name="description">Удаляет настройки по умолчанию в меню \"Настройки &gt; Приложения &gt; Загруженные\".</string>
+    <string name="button">Выберите способ ввода</string>
+    <string name="message">Сеть VPN подключена: <xliff:g id="SESSION">%s</xliff:g>. Нажмите, чтобы открыть настройки.</string>
+</resources>

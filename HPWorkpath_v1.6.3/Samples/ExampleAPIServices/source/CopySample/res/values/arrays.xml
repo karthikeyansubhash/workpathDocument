@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_default_entries">
+        <item>DEFAULT</item>
+    </string-array>
+
+    <string-array name="pref_default_password_entries">
+        <item>NONE</item>
+    </string-array>
+
+    <string-array name="pref_destination_entries">
+        <item>NORMAL</item>
+    </string-array>
+</resources>

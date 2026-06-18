@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">사용하려면 터치하세요.(ko-KR)</string>
+    <string name="sub_app_name">사용하려면 터치하세요. (Sub)(ko-KR)</string>
+    <string name="config_app_name">사용하려면 터치하세요. (Config)(ko-KR)</string>
+
+    <string name="description">시스템 설정 &gt; 앱 &gt; 다운로드로 이동하여 기본 설정을 지웁니다.</string>
+    <string name="button">입력 방법 선택</string>
+    <string name="message"><xliff:g id="SESSION">%s</xliff:g>에 연결되어 있습니다. 네트워크를 관리하려면 터치하세요.</string>
+</resources>

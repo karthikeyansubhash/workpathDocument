@@ -1,0 +1,16 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MultiLanguage Sample</string>
+    <string name="sub_app_name">MultiLanguage (Sub)</string>
+    <string name="config_app_name">MultiLanguage (Config)</string>
+    <string name="version" translatable="false">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+
+    <string name="this_is_main_activity" translatable="false">Main Activity</string>
+    <string name="this_is_sub_activity" translatable="false">Sub Activity</string>
+    <string name="this_is_config_activity" translatable="false">Configuration Activity</string>
+
+    <string name="description">Default description</string>
+    <string name="button">Default button</string>
+    <string name="message">Default message: <xliff:g id="SESSION">%s</xliff:g>.</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Appuyez ici pour réactiver.(fr-FR)</string>
+    <string name="sub_app_name">Appuyez ici pour réactiver. (Sub)(fr-FR)</string>
+    <string name="config_app_name">Appuyez ici pour réactiver. (Config)(fr-FR)</string>
+
+    <string name="description">Pour supprimer les valeurs par défaut, accédez à Paramètres système &gt; Applications &gt; Téléchargements.</string>
+    <string name="button">Sélectionnez le mode de saisie</string>
+    <string name="message">Connecté à <xliff:g id="SESSION">%s</xliff:g>. Appuyez ici pour gérer le réseau.</string>
+</resources>

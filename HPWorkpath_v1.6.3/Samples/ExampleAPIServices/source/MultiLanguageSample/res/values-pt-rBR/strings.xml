@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Toque para ativar.(pt-BR)</string>
+    <string name="sub_app_name">Toque para ativar. (Sub)(pt-BR)</string>
+    <string name="config_app_name">Toque para ativar. (Config)(pt-BR)</string>
+
+    <string name="description">Padrão claro em Configurações do sistema &gt; Aplicativos &gt; Baixado.</string>
+    <string name="button">Selecione o método de entrada</string>
+    <string name="message">Conectado a <xliff:g id="SESSION">%s</xliff:g>. Toque para gerenciar a rede.</string>
+</resources>

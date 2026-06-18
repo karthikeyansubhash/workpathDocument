@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hp.workpath.sample.printsample">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/DefaultTheme"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FileBrowserActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+            android:exported="false"
+            android:label="@string/select_file" />
+
+        <!-- Exported to receive Print Job completion broadcast -->
+        <receiver android:name=".JobCompleteReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.hp.workpath.sample.printsample.ACTION_PRINT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

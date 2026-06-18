@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Tryk for at aktivere.(da-DK)</string>
+    <string name="sub_app_name">Tryk for at aktivere. (Sub)(da-DK)</string>
+    <string name="config_app_name">Tryk for at aktivere. (Config)(da-DK)</string>
+
+    <string name="description">Ryd standard i Systemindstillinger &gt; Apps &gt; Downloadet.</string>
+    <string name="button">Vælg inputmetode</string>
+    <string name="message">Forbundet til <xliff:g id="SESSION">%s</xliff:g>. Tryk for at administrere netværket.</string>
+</resources>

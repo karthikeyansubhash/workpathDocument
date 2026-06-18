@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="DefaultTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="preferenceTheme">@style/DefaultTheme.PreferenceThemeOverlay</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ButtonBar" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/textSize</item>
+    </style>
+
+</resources>

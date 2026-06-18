@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="authType">
+        <item>Windows</item>
+    </string-array>
+    <string-array name="sign_in_action_arrays">
+        <item>SUCCESS</item>
+        <item>CONTINUE</item>
+        <item>FAIL</item>
+        <item>HOME</item>
+        <item>BACK</item>
+    </string-array>
+</resources>

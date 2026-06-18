@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Докоснете за активиране (bg-BG)</string>
+    <string name="sub_app_name">Докоснете за активиране (Sub)(bg-BG)</string>
+    <string name="config_app_name">Докоснете за активиране (Config)</string>
+
+    <string name="description">Изчистване на стандартната настройка в „Системни настройки“ &gt; „Приложения“ &gt; „Изтеглени“.</string>
+    <string name="button">Избор на метод на въвеждане</string>
+    <string name="message">Свързана с/ъс <xliff:g id="SESSION">%s</xliff:g>. Докоснете, за да управлявате мрежата.</string>
+</resources>

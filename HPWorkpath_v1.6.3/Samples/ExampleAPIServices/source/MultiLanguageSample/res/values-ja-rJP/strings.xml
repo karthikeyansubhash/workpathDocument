@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">タップして有効にします。(ja-JP)</string>
+    <string name="sub_app_name">タップして有効にします。 (Sub)(ja-JP)</string>
+    <string name="config_app_name">タップして有効にします。 (Config)(ja-JP)</string>
+
+    <string name="description">[システム設定]&gt;[アプリ]&gt;[ダウンロード済み]でデフォルト設定をクリアします。</string>
+    <string name="button">入力方法の選択</string>
+    <string name="message"><xliff:g id="SESSION">%s</xliff:g>に接続しました。ネットワークを管理するにはタップしてください。</string>
+</resources>

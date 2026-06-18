@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Dotykom povoľte.e(sk-SK)</string>
+    <string name="sub_app_name">Dotykom povoľte. (Sub)(sk-SK)</string>
+    <string name="config_app_name">Dotykom povoľte. (Config)(sk-SK)</string>
+
+    <string name="description">Vymazať predvolené nastavenia v sekcii Nastavenia systému &gt; Aplikácie &gt; Prevzaté položky.</string>
+    <string name="button">Zvoliť metódu vstupu</string>
+    <string name="message">Pripojené k relácii <xliff:g id="SESSION">%s</xliff:g>. Po dotyku môžete sieť spravovať.</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Accessory Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="service_not_supported">Accessory Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="permission_not_granted">Permission is not granted, please reinstall the app!</string>
+    <string name="service_failed">Failed to request accessory service</string>
+    <string name="get_owned_not_loaded">Please press \"Get Owned\" before Resend event</string>
+    <string name="enumerate_not_loaded">Please press \"Enumerate\" before Reserve event</string>
+    <string name="shared_only">Shared only</string>
+
+    <!-- UI elements text -->
+    <string name="accessory">Accessory</string>
+    <string name="get_owned">Get Owned</string>
+    <string name="get_owned_accessories">Get Owned Accessories</string>
+    <string name="resend">Resend</string>
+    <string name="attached_accessories">Enumerated Accessories (Attached List)</string>
+    <string name="accessory_information">Accessory information</string>
+    <string name="accessory_data">Accessory data (Decimal)</string>
+    <string name="reports">Accessory Reports</string>
+    <string name="reserve">Reserve</string>
+    <string name="release">Release</string>
+    <string name="open_accessory">Open</string>
+    <string name="close_accessory">Close</string>
+    <string name="start_reading">Start Reading</string>
+    <string name="stop_reading">Stop Reading</string>
+    <string name="read_report">Read Report</string>
+    <string name="write_report">Write Report</string>
+
+    <string name="na">N/A</string>
+    <string name="ok">OK</string>
+    <string name="enumerate">Enumerate</string>
+
+    <!-- preference items -->
+    <string name="pref_default_value">EMPTY</string>
+    <string name="pref_vendor_id">Vendor ID</string>
+    <string name="pref_product_id">Product ID</string>
+    <string name="pref_serial_number">Serial Number</string>
+    <string name="pref_accessory_context_id">Accessory Context ID</string>
+    <string name="pref_report_type">Report Type</string>
+    <string name="pref_report_data">Report Data (in hex)</string>
+    <string name="pref_null">null</string>
+
+</resources>

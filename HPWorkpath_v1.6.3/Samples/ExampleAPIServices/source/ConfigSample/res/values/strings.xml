@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Config Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="service_not_supported">Config Service is not supported</string>
+    <string name="print_service_not_supported">Print Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+
+    <!-- UI elements text -->
+    <string name="application_setting_ui">Custom Application Settings UI</string>
+    <string name="application_default_config">Application Default Configuration</string>
+    <string name="saved_application_option">Saved application option</string>
+    <string name="not_supported">Not supported %1$s</string>
+    <string name="config_observer">Configuration Observer</string>
+    <string name="config_change">Do you want to change \'CUSTOM APPLICATION SETTINGS UI\'?</string>
+    <string name="reset_print_option">Reset Print Option</string>
+    <string name="print_options">Print Options</string>
+    <string name="print_paper_size">Paper Size</string>
+    <string name="print_copies">Copies</string>
+    <string name="print_color_mode">Color Mode</string>
+    <string name="url">URL</string>
+    <string name="get_button">Get</string>
+    <string name="update_button">Update</string>
+    <string name="secret_button">Secret</string>
+    <string name="success">Success</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="secret_value">Secret value has been saved.</string>
+    <string name="secret_value_empty">There are no stored secret values.</string>
+</resources>

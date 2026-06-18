@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Launcher Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="go_home">Escape to Omni home screen</string>
+    <string name="service_not_supported">Launcher Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="link_app_launch">Launch link app</string>
+    <string name="hint_uuid">11111111-1111-1111-8881-111111111111</string>
+    <string name="uuid_missing">Please check uuid</string>
+    <string name="error">Error</string>
+    <string name="open_menu_view">Open menu view</string>
+    <string name="copy">Copy</string>
+    <string name="print">Print</string>
+    <string name="scan">Scan</string>
+
+    <string name="launcher_with_accessory">Launcher with Accessory</string>
+    <string name="get_owned">Get Owned</string>
+    <string name="resend">Resend</string>
+    <string name="open">Open</string>
+    <string name="accessory_data">Accessory Data</string>
+
+    <string name="device_host_name">HostName</string>
+</resources>

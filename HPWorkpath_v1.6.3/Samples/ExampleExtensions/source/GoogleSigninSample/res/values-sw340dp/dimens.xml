@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="webview_height">150dp</dimen>
+    <dimen name="height_38">38dp</dimen>
+    <dimen name="height_42">42dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="width_80">80dp</dimen>
+</resources>

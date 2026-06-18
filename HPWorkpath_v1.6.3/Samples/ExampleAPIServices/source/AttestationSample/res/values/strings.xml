@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Attestation Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="service_not_supported">Attestation Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="na">N/A</string>
+
+    <string name="app_token">App Token</string>
+    <string name="token">Token</string>
+    <string name="expires_in">Expires In</string>
+    <string name="result">Result</string>
+    <string name="result_failed">Code: %1$s,\nErrorCode: %2$s,\nCause: %3$s</string>
+    <string name="result_success">Code: %1$s</string>
+    <string name="get_app_token">Get App Token</string>
+</resources>

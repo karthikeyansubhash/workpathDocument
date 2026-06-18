@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+
+    <dimen name="accessory_info_height">100dp</dimen>
+    <dimen name="accessory_reportdata_height">110dp</dimen>
+
+    <dimen name="button_layout_margin_bottom">10dp</dimen>
+    <dimen name="data_layout_margin">12dp</dimen>
+    <dimen name="button_margin">5dp</dimen>
+    <dimen name="button_padding">20dp</dimen>
+
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+
+    <dimen name="negative_margin8">-8dp</dimen>
+    <dimen name="negative_margin10">-10dp</dimen>
+
+    <dimen name="height_38">38dp</dimen>
+    <dimen name="toolbar_height">40dp</dimen>
+
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="float_btn_size">45dp</dimen>
+</resources>

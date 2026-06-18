@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DefaultTheme" parent="Theme.AppCompat.Light">
+        <item name="preferenceTheme">@style/DefaultTheme.PreferenceThemeOverlay</item>
+    </style>
+    <style name="DefaultThemePreference" parent="DefaultTheme">
+        <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="DefaultTheme.PreferenceThemeOverlay" parent="PreferenceThemeOverlay">
+        <item name="preferenceFragmentListStyle">@style/DefaultTheme.PreferenceFragmentList</item>
+    </style>
+    <style name="DefaultTheme.PreferenceFragmentList">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="ButtonBar" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/button_margin</item>
+        <item name="android:layout_marginRight">@dimen/button_margin</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Αγγίξτε για ενεργοποίηση(el-GR)</string>
+    <string name="sub_app_name">Αγγίξτε για ενεργοποίηση (Sub)(el-GR)</string>
+    <string name="config_app_name">Αγγίξτε για ενεργοποίηση (Config)(el-GR)</string>
+
+    <string name="description">Εκκθάριση προεπιλογής στις Ρυθμίσεις συστήματος &gt; Εφαρμογές &gt; Ληφθείσες</string>
+    <string name="button">Επιλογή μεθόδου εισόδου</string>
+    <string name="message">Συνδέθηκε με <xliff:g id="SESSION">%s</xliff:g>. Αγγίξτε για τη διαχείριση του δικτύου</string>
+</resources>

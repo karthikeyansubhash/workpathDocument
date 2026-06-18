@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Zum Aktivieren berühren(de-DE)</string>
+    <string name="sub_app_name">Zum Aktivieren berühren (Sub)(de-DE)</string>
+    <string name="config_app_name">Zum Aktivieren berühren (Config)(de-DE)</string>
+
+    <string name="description">Das Löschen der Standardeinstellungen ist in den Systemeinstellungen unter \"Apps &gt; Heruntergeladen\" möglich.</string>
+    <string name="button">Eingabemethode wählen</string>
+    <string name="message">Verbunden mit <xliff:g id="SESSION">%s</xliff:g>. Zum Verwalten des Netzwerks berühren</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_clicked">#e6e6e6</color>
+    <color name="option_background_color">#e1e1e1</color>
+    <color name="yellow">#FFF9C4</color>
+    <color name="magenta">#FFCDD2</color>
+    <color name="cyan">#BBDEFB</color>
+    <color name="black">#EEEEEE</color>
+</resources>

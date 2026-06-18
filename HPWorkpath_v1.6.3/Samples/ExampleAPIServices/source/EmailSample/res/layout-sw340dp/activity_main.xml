@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:tag="Screen_4.3_Inch">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_height"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    app:layout_scrollFlags="scroll"
+                    app:title="@string/app_name">
+
+                </com.google.android.material.appbar.MaterialToolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_2"
+                    android:text="@string/email"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textStyle="bold" />
+
+                <View style="@style/HeaderLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/padding_2"
+                        android:paddingBottom="@dimen/padding_2"
+                        android:text="@string/from"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/fromAddressEditText"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_weight="8"
+                        android:hint="@string/address"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/fromNameEditText"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:hint="@string/name"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:id="@+id/toTextView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/padding_2"
+                        android:paddingBottom="@dimen/padding_2"
+                        android:text="@string/to"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/toScrollView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15">
+
+                        <LinearLayout
+                            android:id="@+id/toListLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+
+                    <Button
+                        android:id="@+id/addToButton"
+                        android:layout_width="@dimen/margin_50"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/add_mark"
+                        android:textSize="@dimen/add_button_text_size" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:id="@+id/ccTextView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/padding_2"
+                        android:paddingBottom="@dimen/padding_2"
+                        android:text="@string/cc"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/ccScrollView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15">
+
+                        <LinearLayout
+                            android:id="@+id/ccListLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+
+                    <Button
+                        android:id="@+id/addCcButton"
+                        android:layout_width="@dimen/margin_50"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/add_mark"
+                        android:textSize="@dimen/add_button_text_size" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:id="@+id/bccTextView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:paddingTop="@dimen/padding_2"
+                        android:paddingBottom="@dimen/padding_2"
+                        android:text="@string/bcc"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/bccScrollView"
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15">
+
+                        <LinearLayout
+                            android:id="@+id/bccListLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                    <Button
+                        android:id="@+id/addBccButton"
+                        android:layout_width="@dimen/margin_50"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/add_mark"
+                        android:textSize="@dimen/add_button_text_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/proxyCheckbox"
+                    android:padding="@dimen/padding_2"
+                    android:text="@string/body"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textStyle="bold" />
+
+                <View style="@style/HeaderLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/inner_layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_2"
+                        android:paddingBottom="@dimen/padding_2"
+                        android:text="@string/subject"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/subjectEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <View style="@style/BodyLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/inner_layout_padding">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/inner_layout_padding"
+                            android:paddingBottom="@dimen/inner_layout_padding"
+                            android:text="@string/message"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/messageEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_100"
+                            android:background="@drawable/xml_border"
+                            android:gravity="start|top"
+                            android:inputType="textMultiLine"
+                            android:padding="@dimen/margin_10" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/margin_0"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/inner_layout_padding">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/attachmentLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:paddingTop="@dimen/inner_layout_padding"
+                                android:paddingBottom="@dimen/inner_layout_padding"
+                                android:text="@string/attachments"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:id="@+id/attachedFileCounter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:layout_toRightOf="@+id/attachmentLabel"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/black" />
+
+                            <Button
+                                android:id="@+id/attachButton"
+                                android:layout_width="@dimen/margin_50"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/btn_background"
+                                android:text="@string/add_mark"
+                                android:textSize="@dimen/add_button_text_size" />
+
+                        </RelativeLayout>
+
+                        <ListView
+                            android:id="@+id/attachmentListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/xml_border"
+                            android:fadeScrollbars="false" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_2"
+                    android:padding="@dimen/padding_2"
+                    android:text="@string/smtp"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textStyle="bold" />
+
+                <View style="@style/HeaderLine" />
+
+                <RelativeLayout
+                    android:id="@+id/smtpDetailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector"
+                    android:clickable="true"
+                    android:minHeight="@dimen/min_height"
+                    android:paddingLeft="@dimen/inner_layout_padding"
+                    android:paddingTop="@dimen/padding_2"
+                    android:paddingBottom="@dimen/padding_2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/smtpCheckboxes">
+
+                        <TextView
+                            android:id="@+id/smtpTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/pref_default_value"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/smtpCheckboxes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/smtpEnableCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Enable"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_2"
+                    android:text="@string/proxy"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textStyle="bold" />
+
+                <View style="@style/HeaderLine" />
+
+                <RelativeLayout
+                    android:id="@+id/proxyDetailLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_selector"
+                    android:clickable="true"
+                    android:minHeight="@dimen/min_height"
+                    android:paddingLeft="@dimen/inner_layout_padding"
+                    android:paddingTop="@dimen/padding_2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/proxyCheckboxes">
+
+                        <TextView
+                            android:id="@+id/proxyTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="@dimen/margin_4"
+                            android:text="@string/pref_default_value"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/proxyCheckboxes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/proxyEnableCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Enable"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonbar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/buttonBar"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/getDefaultButton"
+            style="@style/ButtonBar"
+            android:layout_weight="0.7"
+            android:text="@string/get_default" />
+
+        <Button
+            android:id="@+id/sendButton"
+            style="@style/ButtonBar"
+            android:layout_weight="1.2"
+            android:text="@string/send_with_default_smtp" />
+
+        <Button
+            android:id="@+id/sendWithSmtpButton"
+            style="@style/ButtonBar"
+            android:layout_weight="1.2"
+            android:text="@string/send_with_smtp" />
+
+        <Button
+            android:id="@+id/sendWithSmtpProxyButton"
+            style="@style/ButtonBar"
+            android:layout_weight="1.4"
+            android:text="@string/send_with_smtp_proxy" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:visibility="gone" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/margin_4"
+        android:layout_marginBottom="@dimen/margin_28"
+        android:backgroundTint="@color/float_btn_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_settings"
+        android:tint="@color/button_clicked"
+        app:fabCustomSize="@dimen/float_btn_size" />
+
+</RelativeLayout>

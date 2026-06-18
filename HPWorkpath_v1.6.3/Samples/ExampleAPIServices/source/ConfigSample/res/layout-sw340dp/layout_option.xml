@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/optionNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_5"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/optionValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_5"
+        android:textColor="@color/sub_string_color"
+        android:textSize="@dimen/text_size_12" />
+
+</LinearLayout>

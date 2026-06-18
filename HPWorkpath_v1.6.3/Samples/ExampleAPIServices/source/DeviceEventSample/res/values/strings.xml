@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Device Event Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="service_not_supported">Device Event is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="failed">Failed</string>
+    <string name="error">Error</string>
+
+    <string name="get_device_status">get device status</string>
+
+    <string name="offset">└ offset</string>
+    <string name="time">└ time</string>
+
+    <string name="category">category</string>
+    <string name="serverity">serverity</string>
+    <string name="details">details</string>
+    <string name="eventCode">eventCode</string>
+    <string name="instanceId">instanceId</string>
+    <string name="severity">severity</string>
+    <string name="stateChangeType">stateChangeType</string>
+    <string name="supportInformationLink">supportInformationLink</string>
+    <string name="timestamp">timestamp</string>
+    <string name="title">title</string>
+    <string name="total">Current events:</string>
+    <string name="number">No.</string>
+    <string name="no_event">There is no event</string>
+    <string name="range_over">Please enter a value within the range</string>
+</resources>

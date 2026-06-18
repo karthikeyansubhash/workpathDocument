@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:showDividers="middle|end"
+    android:windowSoftInputMode="stateHidden">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            android:id="@+id/fileTypeRadioGroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:checkedButton="@id/radioFileButton"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioFileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/file" />
+
+            <RadioButton
+                android:id="@+id/radioDirectoryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/directory" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/createNameItem"
+        layout="@layout/file_info_child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_for_create_file"
+        android:inputType="textMultiLine"
+        android:maxLength="2000"
+        android:lines="5"
+        android:singleLine="false" />
+
+</LinearLayout>

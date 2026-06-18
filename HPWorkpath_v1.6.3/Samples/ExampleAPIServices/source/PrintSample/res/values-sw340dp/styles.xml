@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowMinWidthMajor">60%</item>
+        <item name="windowMinWidthMinor">60%</item>
+    </style>
+
+    <style name="ButtonBar" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/button_margin</item>
+        <item name="android:layout_marginRight">@dimen/button_margin</item>
+        <item name="android:textSize">@dimen/text_size_footer</item>
+    </style>
+
+    <style name="DefaultTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:maxHeight">5px</item>
+        <item name="android:maxLines">1</item>
+    </style>
+</resources>

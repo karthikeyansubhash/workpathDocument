@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Érintse meg az engedélyezéshez.(hu-HU)</string>
+    <string name="sub_app_name">Érintse meg az engedélyezéshez. (Sub)(hu-HU)</string>
+    <string name="config_app_name">Érintse meg az engedélyezéshez. (Config)(hu-HU)</string>
+
+    <string name="description">Alapértelmezés törlése itt: Rendszerbeállítások &gt; Alkalmazások &gt; Letöltve.</string>
+    <string name="button">Beviteli mód kiválasztása</string>
+    <string name="message">Csatlakozva ide: <xliff:g id="SESSION">%s</xliff:g>. Érintse meg a hálózat kezeléséhez.</string>
+</resources>

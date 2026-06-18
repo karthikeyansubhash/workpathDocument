@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scan Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="service_not_supported">ScannerService is not supported</string>
+    <string name="mass_storage_not_supported">MassStorageService is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="error">Error</string>
+    <string name="permission_not_granted">Permission is not granted, please reinstall the app!</string>
+
+    <!-- UI elements text -->
+    <string name="load_caps_button">Get Capabilities</string>
+    <string name="load_defaults_button">Get Defaults</string>
+    <string name="scan_to_me_button">Scan</string>
+    <string name="cancel">Cancel</string>
+    <string name="getjobinfo_button">Get Job Info</string>
+    <string name="scan_to_me">Base Attributes</string>
+    <string name="scan_status">Scanner Status</string>
+    <string name="get_status">Get Status</string>
+    <string name="apply">Apply</string>
+    <string name="left">Left</string>
+    <string name="top">Top</string>
+    <string name="right">Right</string>
+    <string name="bottom">Bottom</string>
+    <string name="ok">OK</string>
+    <string name="na">N/A</string>
+
+    <!-- Toasts and Messages -->
+    <string name="job_completed">Scan job completed</string>
+    <string name="job_cancelled">Scan job cancelled</string>
+    <string name="job_failed">Scan job failed</string>
+    <string name="job_id">Job ID: %s</string>
+    <string name="loaded_caps">Capabilities were loaded and applied to available options</string>
+    <string name="capabilities_not_available">Capabilities are not available</string>
+    <string name="capabilities_not_loaded">Please press \"Get Capabilities\" before submitting a job</string>
+    <string name="received_complete_intent">Monitoring Job: received Completed intent</string>
+    <string name="no_job_info">No job information</string>
+    <string name="scan_ui_options">Feedback</string>
+    <string name="title_format">\ [%1$.2f, %2$.2f]</string>
+    <string name="title_format_integer">\ [%1$d, %2$d]</string>
+    <string name="hint_folder_path">ex. /myfolder/scan</string>
+    <string name="summary_margin">Left: %1$.2f, Top: %2$.2f, Right: %3$.2f, Bottom: %4$.2f</string>
+    <string name="range_margin">Margin value must be in range [%1$.2f, %2$.2f]</string>
+    <string name="range_smtp_port">SMTP port value must be in range [%1$d, %2$d] seconds</string>
+    <string name="range_connection_timeout_port">Connect Timeout value must be in range [%1$d, %2$d] seconds</string>
+    <string name="range_read_timeout_port">Read Timeout value must be in range [%1$d, %2$d] seconds</string>
+    <string name="succeed">Succeed</string>
+
+    <!-- preference Items -->
+    <string name="pref_default_value">DEFAULT</string>
+    <string name="pref_color_mode">Color Mode</string>
+    <string name="pref_resolution_type">Resolution</string>
+    <string name="pref_doc_format">Document Format</string>
+    <string name="pref_originalSize">Original Size</string>
+    <string name="pref_backgroundCleanup">Background Clean Up</string>
+    <string name="pref_contrastAdjustment">Contrast Adjustment</string>
+    <string name="pref_darknessAdjustment">Darkness Adjustment</string>
+    <string name="pref_blankImageRemovalMode">Blank Image Removal Mode</string>
+    <string name="pref_colorDropoutMode">Color Dropout Mode</string>
+    <string name="pref_cropMode">Crop Mode</string>
+    <string name="pref_progressDialogMode">Progress Dialog Mode</string>
+    <string name="pref_outputQuality">Output Quality</string>
+    <string name="pref_transmissionMode">Transmission Mode</string>
+    <string name="pref_jobAssemblyMode">Job Assembly Mode</string>
+    <string name="pref_sharpnessAdjustment">Sharpness Adjustment</string>
+    <string name="pref_mediaWeightAdjustment">Media Weight Adjustment</string>
+    <string name="pref_textPhotoOptimization">Text/Photo Optimization</string>
+    <string name="pref_mediaSource">Media Source</string>
+    <string name="pref_misfeedDetectionMode">Misfeed Detection Mode</string>
+    <string name="pref_pdf_compression">PDF compression</string>
+    <string name="pref_ocr_language">OCR languages</string>
+    <string name="pref_pdf_password">PDF Encryption password</string>
+    <string name="pref_tiff_compression">Tiff compression</string>
+    <string name="pref_xps_compression">XPS compression</string>
+    <string name="pref_uri">Destination URL</string>
+    <string name="pref_uri_username">URL Username</string>
+    <string name="pref_uri_password">URL Password</string>
+    <string name="pref_uri_domain">URL Domain</string>
+    <string name="pref_duplex_mode">Duplex Mode</string>
+    <string name="pref_orientation">Original Orientation</string>
+    <string name="pref_scanPreview">Scan Preview</string>
+    <string name="pref_monitorJob">Monitoring Job</string>
+    <string name="pref_settingsUi">Settings UI</string>
+    <string name="pref_allow_multiple_scan">Allow Multiple Scan</string>
+    <string name="pref_destination">Destination</string>
+    <string name="pref_filename">File name</string>
+    <string name="pref_Destination_default">ME</string>
+    <string name="pref_destination_http">Scan To HTTP Attributes</string>
+    <string name="pref_destination_ftp">Scan To FTP Attributes</string>
+    <string name="pref_destination_nf">Scan To Network Folder Attributes</string>
+    <string name="pref_destination_email">Scan To Email Attributes</string>
+    <string name="pref_destination_usb">Scan To USB Attributes</string>
+    <string name="pref_show_job_progress">Show Job Progress</string>
+    <string name="pref_default_email">Use device default email settings</string>
+    <string name="pref_customLength">Original Custom Length</string>
+    <string name="pref_customWidth">Original Custom Width</string>
+    <string name="pref_splitAttachmentByPage">Split Attachment By Page</string>
+    <string name="pref_maxPagesPerAttachment">Max Pages Per Attachment</string>
+    <string name="pref_eraseMarginUnit">Erase Margin Unit</string>
+    <string name="pref_eraseBackMargin">Erase Back Margin</string>
+    <string name="pref_eraseFrontMargin">Erase Front Margin</string>
+    <string name="pref_captureMode">Capture Mode</string>
+    <string name="pref_automaticToneMode">Automatic Tone Mode</string>
+    <string name="pref_automaticStraightenMode">Automatic Straighten Mode</string>
+
+    <string name="hint_file_name">Please input file name.</string>
+    <string name="hint_uri_http">Please input HTTP(S) URL (ex. http://server[:port]/path)</string>
+    <string name="hint_uri_ftp">Please input FTP URL (ex. ftp://server[:port]/path</string>
+    <string name="hint_uri_nf">Please input network location (ex. file:////server/path or \\\\server\\share)</string>
+    <string name="hint_uri_username">Username to access URL</string>
+    <string name="hint_uri_password">Password to access URL</string>
+    <string name="hint_uri_domain">Domain to access URL</string>
+
+    <!-- Scan To Email categories -->
+    <string name="pref_email_from">From</string>
+    <string name="pref_email_to">To</string>
+    <string name="pref_email_cc">Cc</string>
+    <string name="pref_email_bcc">Bcc</string>
+    <string name="pref_email_subject">Subject</string>
+    <string name="pref_email_message">Message</string>
+    <string name="pref_email_proxy_mode">Use Proxy</string>
+    <string name="pref_email_proxy_host">Proxy Host</string>
+    <string name="pref_email_proxy_port">Proxy Port</string>
+
+    <string name="pref_email_hostname">Host name</string>
+    <string name="pref_email_port">Port</string>
+    <string name="pref_email_connection_timeout">Connection timeout</string>
+    <string name="pref_email_read_timeout">Read timeout</string>
+    <string name="pref_email_authentication">Authentication</string>
+    <string name="pref_email_username">Username</string>
+    <string name="pref_email_password">Password</string>
+    <string name="pref_email_domain">Domain</string>
+    <string name="pref_email_transport_mode">Transport mode</string>
+    <string name="pref_email_transport_mode_plain">PLAIN</string>
+    <string name="pref_email_transport_mode_ssl_tls">SSL/TLS</string>
+    <string name="pref_email_transport_mode_start_tls">START TLS</string>
+    <string name="pref_email_smtp_title">SMTP settings</string>
+
+    <string name="hint_email_from">Please input From</string>
+    <string name="hint_email_to">Please input TO (comma separated: aaa@hp.com, bbb@hp.com)</string>
+    <string name="hint_email_cc">Please input CC (comma separated: aaa@hp.com, bbb@hp.com)</string>
+    <string name="hint_email_bcc">Please input BCC (comma separated: aaa@hp.com, bbb@hp.com)</string>
+    <string name="hint_email_subject">Please input Subject</string>
+    <string name="hint_email_message">Please input Message</string>
+    <string name="hint_email_smtp">If this option is unchecked, printer default email option will be used.</string>
+    <string name="hint_email_smtp_enable">Host name: %1$s, Port: %2$d</string>
+
+    <!-- Scan To USB categories -->
+    <string name="pref_usb_storage">USB Storage</string>
+    <string name="pref_usb_location">USB folder</string>
+
+    <string name="hint_usb_location">Enter USB folder to save scanned images</string>
+</resources>

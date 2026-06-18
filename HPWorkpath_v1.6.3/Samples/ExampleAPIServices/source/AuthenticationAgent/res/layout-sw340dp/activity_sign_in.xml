@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:tag="Screen_4.3_Inch">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:layout_above="@+id/idLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@drawable/signin_login_unlock_ic"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/idLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/passwordLayout"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <EditText
+                android:id="@+id/idEditText"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:hint="@string/id"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/authTypeLayout"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/authTypeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonLayout"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10"
+                android:text="@string/authentication_type"
+                android:textSize="@dimen/text_size" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/authType"
+                android:spinnerMode="dropdown"
+                android:theme="@style/spinner" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/sign_in"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/failButton"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_weight="1"
+                android:text="@string/failed"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_weight="1"
+                android:text="@string/home"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_weight="1"
+                android:text="@string/back"
+                android:textSize="@dimen/text_size" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/width_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10">
+
+        <include
+            android:id="@+id/layoutManualZone"
+            layout="@layout/layout_manual_zone" />
+
+    </LinearLayout>
+
+</LinearLayout>

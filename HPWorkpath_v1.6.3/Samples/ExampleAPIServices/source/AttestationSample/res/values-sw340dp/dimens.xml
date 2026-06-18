@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="textSize">12sp</dimen>
+    <dimen name="button_height">38dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+
+</resources>

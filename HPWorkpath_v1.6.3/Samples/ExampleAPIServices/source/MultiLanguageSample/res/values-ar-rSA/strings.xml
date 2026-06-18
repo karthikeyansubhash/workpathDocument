@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">المس للتمكين.(ar-SA)</string>
+    <string name="sub_app_name">المس للتمكين. (Sub)(ar-SA)</string>
+    <string name="config_app_name">المس للتمكين. (Config)(ar-SA)</string>
+
+    <string name="description">يمكنك محو الإعدادات الافتراضية في إعدادات النظام &gt; التطبيقات &gt; ما تم تنزيله.</string>
+    <string name="button">اختيار أسلوب الإدخال</string>
+    <string name="message">تم الاتصال بـ <xliff:g id="SESSION">%s</xliff:g>. المس لإدارة الشبكة.</string>
+</resources>

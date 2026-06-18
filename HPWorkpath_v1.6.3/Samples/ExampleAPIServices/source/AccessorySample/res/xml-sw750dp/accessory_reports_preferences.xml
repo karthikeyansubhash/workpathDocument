@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:key="reports_category"
+        android:layout="@android:layout/preference_category"
+        android:title="@string/reports"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.ListPreference
+            android:dialogTitle="@string/pref_report_type"
+            android:entries="@array/pref_empty_entries"
+            android:entryValues="@array/pref_empty_entries"
+            android:key="pref_report_type"
+            android:title="@string/pref_report_type"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:dialogTitle="@string/pref_report_data"
+            android:key="pref_report_data"
+            android:title="@string/pref_report_data"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

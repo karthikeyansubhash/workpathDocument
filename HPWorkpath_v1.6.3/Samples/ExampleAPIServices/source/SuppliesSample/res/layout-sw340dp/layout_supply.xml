@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:fadeScrollbars="false"
+    android:scrollbars="vertical"
+    android:scrollbarSize="2dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/layoutAgentID"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutApproxPercentRemaining"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/xml_border"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingBottom="@dimen/margin_2">
+
+            <TextView
+                android:id="@+id/titleApproximatePagesRemainingTextView"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layoutApproximatePagesRemainingSymbol"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/layoutApproximatePagesRemainingValue"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutApproxPercentRemainingOnInstall"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutAtLowAction"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutAtVeryLowAction"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/xml_border"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingBottom="@dimen/margin_2">
+
+            <TextView
+                android:id="@+id/titleCapacityTextView"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layoutMaxCapacity"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/layoutUnit"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutCartridgeInfo"
+            layout="@layout/child_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutCartridgeModelCapacity"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutCartridgeModelInformation"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutCartridgeModelLife"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutConsumableContentType"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutConsumableLowThreshold"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutConsumableManufacturingSignature"
+            layout="@layout/child_item"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutConsumableState"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutConsumableTypeEnum"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutCounter"
+            layout="@layout/child_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/xml_border"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingBottom="@dimen/margin_2">
+
+            <TextView
+                android:id="@+id/titleCycleCountTextView"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layoutCycleCountCapacity"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/layoutCycleCountUnit"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutCycleCountV2"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/xml_border"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingBottom="@dimen/margin_2">
+
+            <TextView
+                android:id="@+id/titleCycleLimitTextView"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layoutCycleLimitCapacity"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/layoutCycleLimitUnit"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutCycleLimitV2"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutDescription"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutEstimatedPagesRemaining"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/xml_border"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingBottom="@dimen/margin_2">
+
+            <TextView
+                android:id="@+id/titleInstallationTextView"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layoutInstallationDate"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutLastUse"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutMakeAndModel"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/xml_border"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingBottom="@dimen/margin_2">
+
+            <TextView
+                android:id="@+id/titleManufacturerTextView"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layoutDate"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/layoutName"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutMarkerColor"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutProductNumber"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/xml_border"
+            android:paddingTop="@dimen/margin_2"
+            android:paddingBottom="@dimen/margin_2">
+
+            <TextView
+                android:id="@+id/titleRawElabelDataTextView"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/layoutCartridgeMemoryTagData1"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/layoutElabelMask"
+                    layout="@layout/child_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layoutRegion"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutReserveState"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutSerialNumber"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutSelectabilityNumber"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutSupportedPartNumbers"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layoutWebServiceAccessData"
+            layout="@layout/child_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
+

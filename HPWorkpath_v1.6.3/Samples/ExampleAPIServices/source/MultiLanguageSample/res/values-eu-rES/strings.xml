@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Ukitu aktibatzeko.(eu-ES)</string>
+    <string name="sub_app_name">Ukitu aktibatzeko. (Sub)(eu-ES)</string>
+    <string name="config_app_name">Ukitu aktibatzeko. (Config)(eu-ES)</string>
+
+    <string name="description">Garbitu aplikazio lehenetsia Sistemaren ezarpenak &gt; Aplikazioak &gt; Deskargatutakoak atalean.</string>
+    <string name="button">Aukeratu idazketa-metodoa</string>
+    <string name="message"><xliff:g id="SESSION">%s</xliff:g> saiora konektatuta. Sakatu sarea kudeatzeko.</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="float_btn_color">#06877A</color>
+    <color name="tab_color">#92FFFFFF</color>
+    <color name="buttonBar">#F5F5F5</color>
+
+</resources>

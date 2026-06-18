@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Device Usage Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="service_not_supported">Device Usage Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="failed">Failed</string>
+    <string name="error">Error</string>
+    <string name="get_device_usage">Get DeviceUsage</string>
+    <string name="more">···</string>
+    <string name="initialized">initialized</string>
+
+    <!--  Titles  -->
+    <string name="plex">└ plex</string>
+    <string name="sheets">└ sheets</string>
+    <string name="jobCategory_title">JobCategory</string>
+    <string name="jobCategory">└ JobCategory</string>
+    <string name="jobCategoryType_title">JobCategoryType</string>
+    <string name="jobCategoryType">└ JobCategoryType</string>
+    <string name="mediaSize_title">mediaSize</string>
+    <string name="mediaSize">└ mediaSize</string>
+    <string name="mediaSizeType_title">mediaSizeType</string>
+    <string name="mediaSizeType">└ mediaSizeType</string>
+    <string name="impressions_title">impressions</string>
+    <string name="impressions">└ impressions</string>
+    <string name="colorMode">└ colorMode</string>
+    <string name="colorModeType">└ colorModeType</string>
+    <string name="images_title">images</string>
+    <string name="images">└ images</string>
+    <string name="engineCycles">└ engineCycles</string>
+    <string name="byPrintPlex">└ byPrintPlex</string>
+    <string name="byJobCategory">└ byJobCategory</string>
+    <string name="byMediaSize">└ byMediaSize</string>
+    <string name="byMediaSize_title">byMediaSize</string>
+    <string name="byJobCategoryAndMediaSize_title">byJobCategoryAndMediaSize</string>
+    <string name="byJobCategoryAndMediaSize">└ byJobCategoryAndMediaSize</string>
+    <string name="byColorMode">└ byColorMode</string>
+    <string name="a4EquivalentDeciImpressions">└ A4EquivalentDeciImpressions</string>
+    <string name="a4EquivalentDeciImpressions_title">A4EquivalentDeciImpressions</string>
+    <string name="index">No.</string>
+
+    <string name="a4EquivalentByJobCategory">└ A4EquivalentByJobCategory</string>
+    <string name="printByMediaSize">└ PrintByMediaSize</string>
+    <string name="copyByMediaSize">└ CopyByMediaSize</string>
+    <string name="faxByMediaSize">└ FaxByMediaSize</string>
+    <string name="plexByMediaSize">└ PlexByMediaSize</string>
+    <string name="colorDeciImpressions">└ ColorDeciImpressions</string>
+    <string name="colorDeciImpressions_title">colorImpressions</string>
+    <string name="monoDeciImpressions">└ MonoDeciImpressions</string>
+    <string name="monoDeciImpressions_title">monoImpressions</string>
+    <string name="totalDeciImpressions">└ TotalDeciImpressions</string>
+    <string name="totalDeciImpressions_title">totalImpressions</string>
+    <string name="printByMediaSize_title">printByMediaSize</string>
+    <string name="copyByMediaSize_title">copyByMediaSize</string>
+    <string name="plexByMediaSize_title">plexByMediaSize</string>
+    <string name="simplexSheets">SimplexSheets</string>
+    <string name="duplexSheets">DuplexSheets</string>
+    <string name="totalSheets">TotalSheets</string>
+    <string name="faxByMediaSize_title">faxByMediaSize</string>
+
+
+</resources>

@@ -1,0 +1,201 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="Screen_4.3_Inch"
+    tools:context="com.hp.workpath.sample.deviceinfosample.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/app_name"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonBarLayout"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:id="@+id/dataContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/buttonbar_height"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|end">
+
+            <!-- Header item -->
+            <include layout="@layout/header_item" />
+
+            <!-- Child items list -->
+            <include
+                android:id="@+id/childModelName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_height" />
+
+            <include
+                android:id="@+id/childHostName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_height" />
+
+            <include
+                android:id="@+id/childNetworkAddress"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_height" />
+
+            <include
+                android:id="@+id/childFirmwareVersion"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_height" />
+
+            <include
+                android:id="@+id/childDeviceId"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_height" />
+
+            <include
+                android:id="@+id/childSerialNumber"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_height" />
+
+            <include
+                android:id="@+id/childLanguageSet"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/include_height" />
+
+            <include
+                android:id="@+id/childLanguageCapability"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childAssetNumber"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childCompanyContact"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childCompanyName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childDeviceLocation"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childMachineName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childFutureSmartLevel"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonbar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/action_bar_color"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/getInformationButton"
+            android:layout_width="@dimen/width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/read_device_props"
+            android:textColor="@color/footer_text_color" />
+
+        <Button
+            android:id="@+id/enablePortButton"
+            android:layout_width="@dimen/width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/enablePrinting"
+            android:textColor="@color/footer_text_color" />
+
+        <Button
+            android:id="@+id/disablePortButton"
+            android:layout_width="@dimen/width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/disablePrinting"
+            android:textColor="@color/footer_text_color" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/margin_40"
+        android:src="@drawable/ic_settings"
+        app:elevation="@dimen/elevation"
+        app:fabSize="mini" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
