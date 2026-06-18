@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="option_background_color">#edeeee</color>
+    <color name="snackbar_button_color">#cccccc</color>
+    <color name="button_clicked">#e6e6e6</color>
+</resources>

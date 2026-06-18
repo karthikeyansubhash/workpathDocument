@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_8">
+
+        <ImageView
+            android:id="@+id/getOwnedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/checkbox_on_background"
+            android:checked="true"
+            android:padding="@dimen/padding_5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ownedTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/getOwnedCheckBox"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_5"
+            android:text="@string/get_owned_accessories"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:background="@color/line"
+        android:paddingTop="@dimen/padding_5" />
+
+    <RelativeLayout
+        android:id="@+id/ownedListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:paddingLeft="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toStartOf="@+id/getOwnedButton">
+
+            <TextView
+                android:id="@+id/ownedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/pref_default_value"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/resendButton"
+            style="@style/ButtonBar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="@string/resend" />
+
+        <Button
+            android:id="@+id/getOwnedButton"
+            style="@style/ButtonBar"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/resendButton"
+            android:clickable="true"
+            android:text="@string/get_owned" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_5">
+
+        <ImageView
+            android:id="@+id/enumerateCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/checkbox_on_background"
+            android:checked="true"
+            android:padding="@dimen/padding_5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/enumerateTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/enumerateCheckBox"
+            android:paddingTop="@dimen/padding_5"
+            android:paddingBottom="@dimen/padding_5"
+            android:text="@string/attached_accessories"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/enumerateListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:paddingLeft="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toStartOf="@+id/buttonLayout">
+
+            <TextView
+                android:id="@+id/enumerateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/pref_default_value"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/enumerateButton"
+                style="@style/ButtonBar"
+                android:text="@string/enumerate" />
+
+            <Button
+                android:id="@+id/reserveButton"
+                style="@style/ButtonBar"
+                android:text="@string/reserve" />
+
+            <Button
+                android:id="@+id/releaseButton"
+                style="@style/ButtonBar"
+                android:text="@string/release" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

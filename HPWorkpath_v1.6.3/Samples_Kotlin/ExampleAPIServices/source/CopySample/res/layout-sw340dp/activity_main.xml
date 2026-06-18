@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:tag="Screen_4.3_Inch"
+    tools:context="com.hp.workpath.sample.copysample.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:theme="@style/Theme.AppCompat.Light"
+            app:layout_scrollFlags="scroll"
+            app:title="@string/app_name">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            app:tabGravity="fill"
+            app:tabMode="scrollable"
+            android:background="@color/tab_color"
+            app:tabTextAppearance="@style/Widget.AppCompat.Button.Small"
+            app:tabTextColor="@android:color/black" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonbar_height"
+        android:background="@color/buttonBar"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/loadCapsButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_weight="1"
+            android:text="@string/load_caps_button" />
+
+        <Button
+            android:id="@+id/loadDefaultsButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_weight="1"
+            android:text="@string/load_defaults_button" />
+
+        <Button
+            android:id="@+id/copyButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_weight="1"
+            android:text="@string/copy_button" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/releaseButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_weight="1"
+            android:text="@string/release_button" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_weight="1"
+            android:text="@string/delete_button" />
+
+        <Button
+            android:id="@+id/getJobInfoButton"
+            style="@style/ButtonBar"
+            android:layout_width="@dimen/margin_0"
+            android:layout_weight="1"
+            android:text="@string/getjobinfo_button" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/margin_4"
+        android:layout_marginBottom="@dimen/margin_36"
+        android:backgroundTint="@color/float_btn_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_settings"
+        android:tint="@color/button_clicked"
+        app:fabCustomSize="@dimen/float_btn_size" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

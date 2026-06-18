@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Access Sample</string>
+    <string name="version_code">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="service_not_supported">Access Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+
+    <string name="version_line">API Version</string>
+    <string name="fully_qualified_name">Fully Qualified Name</string>
+    <string name="principal_id_line">Principal ID</string>
+    <string name="domain_line">Domain</string>
+    <string name="user_name_line">User Name</string>
+    <string name="user_email_line">User Email</string>
+    <string name="is_admin_line">Is Admin</string>
+    <string name="is_authenticated_line">Is Authenticated</string>
+    <string name="simple_authorities_line">Authorities</string>
+    <string name="is_hp_cloud_user">Is HPCloud User</string>
+    <string name="is_guest_user">Is Guest User</string>
+    <string name="is_device_user">Is Device User</string>
+    <string name="is_service_user">Is Service User</string>
+    <string name="is_smart_card_user">Is SmartCard User</string>
+    <string name="header_version">HP Workpath SDK</string>
+    <string name="header_user_details">User Details</string>
+    <string name="password">Password</string>
+    <string name="na">N/A</string>
+    <string name="version">%1$s (API Level: %2$d)</string>
+    <string name="provider">Provider</string>
+    <string name="provider_uuid">Provider UUID</string>
+    <string name="header_user_property">User Property</string>
+    <string name="get_value">Get Value</string>
+    <string name="key">Key</string>
+    <string name="value">Value</string>
+</resources>

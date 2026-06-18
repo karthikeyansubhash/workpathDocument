@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:tag="default"
+    tools:context="com.hp.workpath.sample.deviceinfosample.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonBarLayout">
+
+        <LinearLayout
+            android:id="@+id/dataContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|end">
+
+            <!-- Header item -->
+            <include layout="@layout/header_item" />
+
+            <!-- Child items list -->
+            <include
+                android:id="@+id/childModelName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childHostName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childNetworkAddress"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childFirmwareVersion"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childDeviceId"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childSerialNumber"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childLanguageSet"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childLanguageCapability"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childAssetNumber"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childCompanyContact"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childCompanyName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childDeviceLocation"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childMachineName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childFutureSmartLevel"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/getInformationButton"
+            style="@style/ButtonBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/read_device_props" />
+
+        <Button
+            android:id="@+id/enablePortButton"
+            style="@style/ButtonBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/enablePrinting" />
+
+        <Button
+            android:id="@+id/disablePortButton"
+            style="@style/ButtonBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/disablePrinting" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="add_button_text_size">20sp</dimen>
+    <dimen name="delete_button_text_size">15sp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="buttonbar_height">40dp</dimen>
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="min_height">35dp</dimen>
+    <dimen name="float_btn_size">45dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="button_height">38dp</dimen>
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+
+</resources>

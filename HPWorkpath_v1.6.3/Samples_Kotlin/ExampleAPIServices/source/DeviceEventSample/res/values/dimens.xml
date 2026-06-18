@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="layout_top_bottom_margin">5dp</dimen>
+    <dimen name="adapter_height">42dp</dimen>
+    <dimen name="button_margin">16dp</dimen>
+    <dimen name="button_padding">20dp</dimen>
+    <dimen name="button_layout_margin_bottom">16dp</dimen>
+
+    <dimen name="width_0">0dp</dimen>
+    <dimen name="height_0">0dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+    <dimen name="scrollbar_size_2">2dp</dimen>
+    <dimen name="scrollbar_size_4">4dp</dimen>
+</resources>

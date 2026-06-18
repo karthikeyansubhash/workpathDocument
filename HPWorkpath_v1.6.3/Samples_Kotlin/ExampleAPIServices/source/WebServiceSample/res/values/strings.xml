@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Web Service Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="request">Request</string>
+    <string name="response">Response</string>
+    <string name="method">Method</string>
+    <string name="header">Header</string>
+    <string name="body">Body</string>
+</resources>

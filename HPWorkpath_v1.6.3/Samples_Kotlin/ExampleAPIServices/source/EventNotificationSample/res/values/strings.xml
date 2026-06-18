@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EventNotification Sample</string>
+    <string name="version_code">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="channel_name">Channel Samples</string>
+    <string name="channel_description">Samples notification channel</string>
+
+    <string name="access_service_not_supported">Access Service is not supported</string>
+    <string name="config_service_not_supported">Config Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+
+    <string name="version_line">API Version</string>
+    <string name="header_version">HP Workpath SDK</string>
+    <string name="header_event_details">Event Details</string>
+
+    <string name="default_data_message">No data</string>
+</resources>

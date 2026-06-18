@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|end">
+
+            <!-- Header item -->
+            <include
+                android:id="@+id/headerVersion"
+                layout="@layout/header_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Child items list -->
+            <include
+                android:id="@+id/childSdkVersion"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <!-- Header item -->
+            <include
+                android:id="@+id/headerUser"
+                layout="@layout/header_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Child items list -->
+            <include
+                android:id="@+id/childFullyQualifiedName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childPrincipalId"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childDomain"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childProvider"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childUsername"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childPassword"
+                layout="@layout/child_item"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childUserEmail"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childIsAdmin"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childIsAuthenticated"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childSimpleAuthorities"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childIsHpCloudUser"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childIsGuestUser"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childIsDeviceUser"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childIsServiceUser"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childIsSmartCardUser"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childProviderUuid"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <!-- Header item -->
+            <include
+                android:id="@+id/headerProperty"
+                layout="@layout/header_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Child items list -->
+            <include
+                android:id="@+id/childUserProperty"
+                layout="@layout/child_user_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+</RelativeLayout>
+

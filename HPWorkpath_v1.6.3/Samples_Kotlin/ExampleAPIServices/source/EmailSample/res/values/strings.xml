@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Email Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="email">Email</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="cc">Cc</string>
+    <string name="bcc">Bcc</string>
+    <string name="add">Add</string>
+    <string name="add_mark">+</string>
+    <string name="del_mark">x</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="address_hint">ex) user@example.com</string>
+    <string name="subject">Subject</string>
+    <string name="body">Body</string>
+    <string name="message">Message</string>
+    <string name="attachment">Attachment</string>
+    <string name="attachments">Attachments</string>
+    <string name="attachment_count">(%d)</string>
+    <string name="send_with_default_smtp">Send (default SMTP)</string>
+    <string name="send_with_smtp">Send (with SMTP)</string>
+    <string name="send_with_smtp_proxy">Send (with SMTP&amp;Proxy)</string>
+    <string name="get_default">Get Default</string>
+    <string name="proxy">Proxy</string>
+    <string name="smtp">SMTP</string>
+    <string name="use_default">Use Default</string>
+    <string name="pref_default_value">EMPTY</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_file">Select File</string>
+    <string name="selected_file">Selected File</string>
+
+    <!-- smtp setting preferences-->
+    <string name="pref_email_hostname">Host name</string>
+    <string name="pref_email_port">Port</string>
+    <string name="pref_email_connection_timeout">Connection timeout</string>
+    <string name="pref_email_read_timeout">Read timeout</string>
+    <string name="pref_email_authentication">Authentication</string>
+    <string name="pref_email_username">Username</string>
+    <string name="pref_email_password">Password</string>
+    <string name="pref_email_domain">Domain</string>
+    <string name="pref_email_transport_mode">Transport mode</string>
+    <string name="pref_email_transport_mode_plain">PLAIN</string>
+    <string name="pref_email_transport_mode_ssl_tls">SSL/TLS</string>
+    <string name="pref_email_transport_mode_start_tls">START TLS</string>
+    <string name="pref_email_smtp_title">SMTP settings</string>
+    <string name="configuration_mode">Configuration Mode</string>
+
+    <!-- message -->
+    <string name="succeed">Succeed</string>
+    <string name="error">Error</string>
+    <string name="service_not_supported">Email is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="no_file">File is not found</string>
+    <string name="smtp_setting_detail">Host name: %1$s, Port: %2$d, Username: %3$s, Password: %4$s, Domain: %5$s, Transport mode: %6$s\nConnection timeout: %7$d, Read timeout: %8$d</string>
+    <string name="proxy_setting_detail">Host name: %1$s, Port: %2$d, Configuration Mode: %3$s</string>
+    <string name="no_smtp_setting">Failed: No SMTP Settings</string>
+    <string name="no_proxy_setting">Failed: No Proxy Settings</string>
+    <string name="email_address_empty">Email address is empty</string>
+    <string name="hostname_empty">Hostname is empty</string>
+    <string name="smtp_port_range_error">SMTP port value must be in range [%1$d, %2$d] seconds</string>
+    <string name="proxy_port_range_error">Proxy port value must be in range [%1$d, %2$d] seconds</string>
+    <string name="connection_timeout_range_error">Connection Timeout value must be in range [%1$d, %2$d] seconds</string>
+    <string name="read_timeout_range_error">Read Timeout value must be in range [%1$d, %2$d] seconds</string>
+    <string name="attachment_file_not_exist">Error: The file %s does not exist.</string>
+    <string name="error_select_file">File selection error</string>
+    <string name="empty_directory">Empty Directory</string>
+</resources>

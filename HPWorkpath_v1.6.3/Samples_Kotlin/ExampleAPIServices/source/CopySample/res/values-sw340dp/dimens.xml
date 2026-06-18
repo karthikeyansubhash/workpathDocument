@@ -1,0 +1,19 @@
+<resources>
+
+    <dimen name="button_height">38dp</dimen>
+    <dimen name="textSize">12sp</dimen>
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="tab_height">30dp</dimen>
+    <dimen name="buttonbar_height">40dp</dimen>
+    <dimen name="float_btn_size">45dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+
+</resources>

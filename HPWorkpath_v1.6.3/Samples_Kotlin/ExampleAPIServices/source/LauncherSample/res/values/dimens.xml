@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_height">38dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="edit_textsize">14sp</dimen>
+    <dimen name="button_textsize">12sp</dimen>
+    <dimen name="width_0">0dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="image_size">60dp</dimen>
+    <dimen name="viewheight">1dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="title_textSize">14sp</dimen>
+
+</resources>

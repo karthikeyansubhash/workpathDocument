@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">輕觸即可啟用。(zh-TW)</string>
+    <string name="sub_app_name">輕觸即可啟用。(Sub)(zh-TW)</string>
+    <string name="config_app_name">輕觸即可啟用。(Config)(zh-TW)</string>
+
+    <string name="description">前往 [系統設定] &gt; [應用程式] &gt; [下載] 清除預設值。</string>
+    <string name="button">選擇輸入法</string>
+    <string name="message">已連線至 <xliff:g id="SESSION">%s</xliff:g>，輕觸即可管理網路。</string>
+</resources>

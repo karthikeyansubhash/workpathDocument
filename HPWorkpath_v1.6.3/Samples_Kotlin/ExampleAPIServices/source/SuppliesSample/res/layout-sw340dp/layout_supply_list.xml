@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jobInfoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/adapter_height"
+    android:background="@drawable/btn_selector"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/sequenceTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/consumableTypeTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1" />
+
+
+    <TextView
+        android:id="@+id/approxPercentTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/productNumberTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center" />
+
+</LinearLayout>
+
+

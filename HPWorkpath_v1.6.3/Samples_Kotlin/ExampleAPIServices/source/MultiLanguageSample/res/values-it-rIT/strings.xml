@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Tocca per abilitare.(it-IT)</string>
+    <string name="sub_app_name">Tocca per abilitare. (Sub)(it-IT)</string>
+    <string name="config_app_name">Tocca per abilitare. (Config)(it-IT)</string>
+
+    <string name="description">Cancella l\'applicazione predefinita in Impostazioni di sistema &gt; Applicazioni &gt; Scaricate.</string>
+    <string name="button">Scegli il metodo di immissione</string>
+    <string name="message">Collegata a <xliff:g id="SESSION">%s</xliff:g>. Tocca per gestire la rete.</string>
+</resources>

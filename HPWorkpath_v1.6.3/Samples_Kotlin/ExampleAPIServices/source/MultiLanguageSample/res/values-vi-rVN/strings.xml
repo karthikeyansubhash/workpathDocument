@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Chạm vào để kích hoạt.(vi-VN)</string>
+    <string name="sub_app_name">Chạm vào để kích hoạt. (Sub)(vi-VN)</string>
+    <string name="config_app_name">Chạm vào để kích hoạt. (Config)(vi-VN)</string>
+
+    <string name="description">Xóa mặc định trong Cài đặt Hệ thống > Ứng dụng > Tải xuống.</string>
+    <string name="button">Chọn phương pháp nhập liệu</string>
+    <string name="message">Kết nối với <xliff:g id="SESSION">%s</xliff:g>. Chạm vào để quản lý mạng.</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="DefaultTheme" parent="Theme.AppCompat.Light">
+
+        <item name="android:textSize">12sp</item>
+        <item name="actionBarSize">@dimen/toolbar_height</item>
+
+    </style>
+
+    <style name="ButtonBar" parent="Widget.AppCompat.Button.Small">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginTop">@dimen/button_margin</item>
+        <item name="android:layout_marginLeft">@dimen/button_margin</item>
+        <item name="android:layout_marginRight">@dimen/button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_bottom</item>
+        <item name="android:textSize">@dimen/details_textSize</item>
+
+    </style>
+
+</resources>

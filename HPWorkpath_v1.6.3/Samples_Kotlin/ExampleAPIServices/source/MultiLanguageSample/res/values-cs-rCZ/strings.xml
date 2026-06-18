@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Dotykem povolte.(cs-CZ)</string>
+    <string name="sub_app_name">Dotykem povolte. (Sub)(cs-CZ)</string>
+    <string name="config_app_name">Dotykem povolte. (Config)(cs-CZ)</string>
+
+    <string name="description">Výchozí nastavení vymažete v části Nastavení systému &gt; Aplikace &gt; Stažené.</string>
+    <string name="button">Vybrat metodu vstupu</string>
+    <string name="message">Připojeno k relaci <xliff:g id="SESSION">%s</xliff:g>. Dotykem můžete síť spravovat.</string>
+</resources>

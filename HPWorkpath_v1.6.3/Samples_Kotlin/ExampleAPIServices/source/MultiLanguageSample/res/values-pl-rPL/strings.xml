@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Dotknij, aby włączyć.(pl-PL)</string>
+    <string name="sub_app_name">Dotknij, aby włączyć. (Sub)(pl-PL)</string>
+    <string name="config_app_name">Dotknij, aby włączyć. (Config)(pl-PL)</string>
+
+    <string name="description">Wyczyść wartości domyślne w: Ustawienia systemu &gt; Aplikacje &gt; Pobrane.</string>
+    <string name="button">Wybierz metodę wprowadzania</string>
+    <string name="message">Nawiązano połączenie z: <xliff:g id="SESSION">%s</xliff:g>. Dotknij, aby zarządzać siecią.</string>
+</resources>

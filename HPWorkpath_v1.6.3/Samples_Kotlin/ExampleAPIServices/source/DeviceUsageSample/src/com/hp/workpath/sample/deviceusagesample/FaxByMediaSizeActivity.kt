@@ -1,0 +1,40 @@
+package com.hp.workpath.sample.deviceusagesample
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import com.hp.workpath.sample.deviceusagesample.fragment.FaxByMediaSizeFragment
+import com.hp.workpath.sample.deviceusagesample.fragment.PrintByMediaSizeFragment
+
+class FaxByMediaSizeActivity : AppCompatActivity() {
+
+    private lateinit var mFaxByMediaSizeFragment: FaxByMediaSizeFragment
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_fax_by_media_size)
+
+        val bundle = Bundle()
+        bundle.putString(DATA, intent.getStringExtra(DATA))
+        mFaxByMediaSizeFragment = FaxByMediaSizeFragment()
+        mFaxByMediaSizeFragment.arguments = bundle
+    }
+
+    override fun onResume() {
+        super.onResume()
+        replaceFragment(mFaxByMediaSizeFragment)
+    }
+
+    private fun replaceFragment(fragment: Fragment?) {
+        if (fragment != null) {
+            val fragmentManager = supportFragmentManager
+            val transaction = fragmentManager.beginTransaction()
+            transaction.replace(R.id.fragmentContainer, fragment)
+            transaction.commit()
+        }
+    }
+
+    companion object {
+        const val DATA = "data"
+    }
+}

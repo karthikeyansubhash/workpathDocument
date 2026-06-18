@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="line">#cbcbcb</color>
+    <color name="button_clicked">#e6e6e6</color>
+    <color name="subline">#e6e6e6</color>
+    <color name="hp_blue">#0095d9</color>
+    <color name="default_line_color">#e2e2e2</color>
+</resources>

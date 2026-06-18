@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+
+    <dimen name="accessory_info_height">170dp</dimen>
+
+    <dimen name="button_layout_margin_bottom">16dp</dimen>
+    <dimen name="data_layout_margin">12dp</dimen>
+    <dimen name="button_margin">8dp</dimen>
+    <dimen name="button_padding">20dp</dimen>
+
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+</resources>

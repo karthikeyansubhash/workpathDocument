@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:key="accessory_category"
+        android:layout="@android:layout/preference_category"
+        android:title="@string/accessory"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            android:key="pref_accessory_info"
+            android:summary="@string/na"
+            android:title="@string/accessory_information"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:key="pref_accessory_context_id"
+            android:summary="@string/na"
+            android:title="@string/pref_accessory_context_id"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

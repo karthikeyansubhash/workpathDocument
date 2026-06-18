@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:key="destination_category"
+        android:order="1"
+        android:title="@string/pref_destination"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_Destination_default"
+            android:dialogTitle="@string/pref_destination"
+            android:entries="@array/pref_Destination_entries"
+            android:entryValues="@array/pref_Destination_entries"
+            android:key="pref_destination"
+            android:order="1"
+            android:title="@string/pref_destination"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="destination_http_category"
+        android:order="2"
+        android:title="@string/pref_destination_http"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri"
+            android:hint="@string/hint_uri_http"
+            android:key="pref_uri_http"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri_username"
+            android:hint="@string/hint_uri_username"
+            android:key="pref_uri_http_username"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri_username"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogLayout="@layout/layout_edit_text_password"
+            android:dialogTitle="@string/pref_uri_password"
+            android:hint="@string/hint_uri_password"
+            android:inputType="textPassword"
+            android:key="pref_uri_http_password"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri_password"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="destination_ftp_category"
+        android:order="3"
+        android:title="@string/pref_destination_ftp"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri"
+            android:hint="@string/hint_uri_ftp"
+            android:key="pref_uri_ftp"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri_username"
+            android:hint="@string/hint_uri_username"
+            android:key="pref_uri_ftp_username"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri_username"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogLayout="@layout/layout_edit_text_password"
+            android:dialogTitle="@string/pref_uri_password"
+            android:hint="@string/hint_uri_password"
+            android:inputType="textPassword"
+            android:key="pref_uri_ftp_password"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri_password"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="destination_network_folder_category"
+        android:order="4"
+        android:title="@string/pref_destination_nf"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri"
+            android:hint="@string/hint_uri_nf"
+            android:key="pref_uri_network_folder"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri_domain"
+            android:hint="@string/hint_uri_domain"
+            android:key="pref_uri_network_folder_domain"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri_domain"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri_username"
+            android:hint="@string/hint_uri_username"
+            android:key="pref_uri_network_folder_username"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri_username"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogLayout="@layout/layout_edit_text_password"
+            android:dialogTitle="@string/pref_uri_password"
+            android:hint="@string/hint_uri_password"
+            android:inputType="textPassword"
+            android:key="pref_uri_network_folder_password"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_uri_password"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="destination_email_category"
+        android:order="5"
+        android:title="@string/pref_destination_email"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_email_from"
+            android:hint="@string/hint_email_from"
+            android:key="pref_email_from"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_email_from"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_email_to"
+            android:hint="@string/hint_email_to"
+            android:key="pref_email_to"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_email_to"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_email_cc"
+            android:hint="@string/hint_email_cc"
+            android:key="pref_email_cc"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_email_cc"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_email_bcc"
+            android:hint="@string/hint_email_bcc"
+            android:key="pref_email_bcc"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_email_bcc"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_email_subject"
+            android:hint="@string/hint_email_subject"
+            android:key="pref_email_subject"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_email_subject"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_email_message"
+            android:hint="@string/hint_email_message"
+            android:key="pref_email_message"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_email_message"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_email_smtp"
+            android:summary="@string/hint_email_smtp"
+            android:title="@string/pref_email_smtp_title"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="destination_usb_category"
+        android:order="6"
+        android:title="@string/pref_destination_usb"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.ListPreference
+            android:dialogTitle="@string/pref_usb_storage"
+            android:entries="@array/pref_empty_entries"
+            android:entryValues="@array/pref_empty_entries"
+            android:key="pref_usb_storage"
+            android:title="@string/pref_usb_storage"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_usb_location"
+            android:hint="@string/hint_usb_location"
+            android:key="pref_usb_location"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_usb_location"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="base_attributes_category"
+        android:order="7"
+        android:title="@string/scan_to_me"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_filename"
+            android:hint="@string/hint_file_name"
+            android:key="pref_filename"
+            android:textColorHint="@color/preference_summary_color"
+            android:title="@string/pref_filename"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_doc_format"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_docFormat"
+            android:order="1"
+            android:title="@string/pref_doc_format"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_ocr_language"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_ocr_language"
+            android:order="2"
+            android:title="@string/pref_ocr_language"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_pdf_compression"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_pdf_compression"
+            android:order="3"
+            android:title="@string/pref_pdf_compression"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogLayout="@layout/layout_edit_text_password"
+            android:dialogTitle="@string/pref_pdf_password"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_pdf_password"
+            android:order="4"
+            android:title="@string/pref_pdf_password"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_tiff_compression"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_tiff_compression"
+            android:order="5"
+            android:title="@string/pref_tiff_compression"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_xps_compression"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_xps_compression"
+            android:order="6"
+            android:title="@string/pref_xps_compression"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_color_mode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_colorMode"
+            android:order="7"
+            android:title="@string/pref_color_mode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_cropMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_cropMode"
+            android:order="8"
+            android:title="@string/pref_cropMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_duplex_mode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_duplexMode"
+            android:order="9"
+            android:title="@string/pref_duplex_mode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_mediaSource"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_mediaSource"
+            android:order="10"
+            android:title="@string/pref_mediaSource"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_orientation"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_orientation"
+            android:order="11"
+            android:title="@string/pref_orientation"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_originalSize"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_originalSize"
+            android:order="12"
+            android:title="@string/pref_originalSize"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <com.hp.workpath.sample.scansample.fragments.EditTextFloatPreference
+            android:dialogLayout="@layout/layout_edit_text_number_decimal_only"
+            android:dialogTitle="@string/pref_customLength"
+            android:key="pref_customLength"
+            android:order="13"
+            android:title="@string/pref_customLength"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <com.hp.workpath.sample.scansample.fragments.EditTextFloatPreference
+            android:dialogLayout="@layout/layout_edit_text_number_decimal_only"
+            android:dialogTitle="@string/pref_customWidth"
+            android:key="pref_customWidth"
+            android:order="14"
+            android:title="@string/pref_customWidth"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_outputQuality"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_outputQuality"
+            android:order="15"
+            android:title="@string/pref_outputQuality"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_resolution_type"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_resolutionType"
+            android:order="16"
+            android:title="@string/pref_resolution_type"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_scanPreview"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_scanPreview"
+            android:order="17"
+            android:title="@string/pref_scanPreview"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_jobAssemblyMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_jobAssemblyMode"
+            android:order="18"
+            android:title="@string/pref_jobAssemblyMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_progressDialogMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_progressDialogMode"
+            android:order="19"
+            android:title="@string/pref_progressDialogMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_transmissionMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_transmissionMode"
+            android:order="20"
+            android:title="@string/pref_transmissionMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_backgroundCleanup"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_backgroundCleanup"
+            android:order="21"
+            android:title="@string/pref_backgroundCleanup"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_blankImageRemovalMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_blankImageRemovalMode"
+            android:order="22"
+            android:title="@string/pref_blankImageRemovalMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_colorDropoutMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_colorDropoutMode"
+            android:order="23"
+            android:title="@string/pref_colorDropoutMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_contrastAdjustment"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_contrastAdjustment"
+            android:order="24"
+            android:title="@string/pref_contrastAdjustment"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_darknessAdjustment"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_darknessAdjustment"
+            android:order="25"
+            android:title="@string/pref_darknessAdjustment"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_mediaWeightAdjustment"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_mediaWeightAdjustment"
+            android:order="26"
+            android:title="@string/pref_mediaWeightAdjustment"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_misfeedDetectionMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_misfeedDetectionMode"
+            android:order="27"
+            android:title="@string/pref_misfeedDetectionMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_sharpnessAdjustment"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_sharpnessAdjustment"
+            android:order="28"
+            android:title="@string/pref_sharpnessAdjustment"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_textPhotoOptimization"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_textPhotoOptimization"
+            android:order="29"
+            android:title="@string/pref_textPhotoOptimization"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_splitAttachmentByPage"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_splitAttachmentByPage"
+            android:order="30"
+            android:title="@string/pref_splitAttachmentByPage"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <com.hp.workpath.sample.scansample.fragments.EditTextIntegerPreference
+            android:dialogLayout="@layout/layout_edit_text_number_only"
+            android:dialogTitle="@string/pref_maxPagesPerAttachment"
+            android:key="pref_maxPagesPerAttachment"
+            android:order="31"
+            android:title="@string/pref_maxPagesPerAttachment"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_eraseMarginUnit"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_eraseMarginUnit"
+            android:order="32"
+            android:title="@string/pref_eraseMarginUnit"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <com.hp.workpath.sample.scansample.fragments.MarginsPreference
+            android:key="pref_eraseBackMargin"
+            android:order="33"
+            android:title="@string/pref_eraseBackMargin"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <com.hp.workpath.sample.scansample.fragments.MarginsPreference
+            android:key="pref_eraseFrontMargin"
+            android:order="34"
+            android:title="@string/pref_eraseFrontMargin"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_captureMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_captureMode"
+            android:order="35"
+            android:title="@string/pref_captureMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_automaticStraightenMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_automaticStraightenMode"
+            android:order="36"
+            android:title="@string/pref_automaticStraightenMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_automaticToneMode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_automaticToneMode"
+            android:order="37"
+            android:title="@string/pref_automaticToneMode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="destination_feedback_category"
+        android:order="8"
+        android:title="@string/scan_ui_options"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_monitorJob"
+            android:order="1"
+            android:title="@string/pref_monitorJob"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_showJobProgress"
+            android:order="2"
+            android:title="@string/pref_show_job_progress"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_settingsUi"
+            android:order="3"
+            android:title="@string/pref_settingsUi"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_allow_multiple_scan"
+            android:order="4"
+            android:title="@string/pref_allow_multiple_scan"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="scanner_status_category"
+        android:order="9"
+        android:title="@string/scan_status"
+        app:iconSpaceReserved="false">
+
+        <com.hp.workpath.sample.scansample.fragments.StatusPreference
+            android:key="pref_scanner_status"
+            android:widgetLayout="@layout/layout_scanner_status"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

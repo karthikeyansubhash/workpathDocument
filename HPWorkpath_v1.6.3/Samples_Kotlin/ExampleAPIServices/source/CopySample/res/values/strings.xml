@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Copy Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="service_not_supported">CopierService is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="device_is_not_connected">Device is not connected</string>
+    <string name="permission_not_granted">Permission is not granted, please reinstall the app!</string>
+
+    <!-- UI elements text -->
+    <string name="pref_destination">Copy Mode</string>
+    <string name="copy_attr">Copy Attributes</string>
+    <string name="load_caps_button">Get Capabilities</string>
+    <string name="load_defaults_button">Get Defaults</string>
+    <string name="copy_button">Copy</string>
+    <string name="cancel">Cancel</string>
+    <string name="getjobinfo_button">Get Job Info</string>
+    <string name="copy_ui_options">Feedback</string>
+    <string name="enumerate_button">Enumerate</string>
+    <string name="detail">Detail</string>
+    <string name="release_button">Release stored</string>
+    <string name="delete_button">Delete stored</string>
+    <string name="device_status">Device status</string>
+    <string name="get_status">Get Status</string>
+    <string name="stored_job">Stored Job</string>
+    <string name="ok">OK</string>
+    <string name="na">N/A</string>
+    <string name="left">Left</string>
+    <string name="top">Top</string>
+    <string name="right">Right</string>
+    <string name="bottom">Bottom</string>
+
+    <string name="stored_job_id">StoredJobId</string>
+    <string name="stored_job_folder_name">StoredJobFolderName</string>
+    <string name="stored_job_name">StoredJobName</string>
+    <string name="stored_job_username">UserName</string>
+    <string name="stored_job_password_type">PasswordType</string>
+    <string name="stored_job_timestamp">StoreJobTimestamp</string>
+    <string name="copies">Copies</string>
+    <string name="color_mode">ColorMode</string>
+    <string name="original_media_size">OriginalMediaSize</string>
+    <string name="output_sides">OutputSides</string>
+    <string name="total_pages">TotalPages</string>
+
+    <!-- Toasts -->
+    <string name="job_completed">Copy job completed</string>
+    <string name="job_cancelled">Copy job cancelled</string>
+    <string name="job_deleted">Stored job deleted</string>
+    <string name="job_failed">Copy job failed</string>
+    <string name="job_id">Job ID: %s</string>
+
+    <!-- Pref values -->
+    <string name="pref_copies">Copies</string>
+    <string name="pref_scan_duplex_mode">Scan Duplex Mode</string>
+    <string name="pref_print_duplex_mode">Print Duplex Mode</string>
+    <string name="pref_orientation">Original Orientation</string>
+    <string name="pref_copy_preview">Copy Preview</string>
+    <string name="pref_scan_source">Scan Source</string>
+    <string name="pref_paper_type">Paper Type</string>
+
+    <string name="pref_default_value">DEFAULT</string>
+    <string name="pref_default_password_value">NONE</string>
+    <string name="pref_color_mode">Color Mode</string>
+    <string name="pref_scan_size">Scan Size</string>
+    <string name="pref_scan_customLength">Scan Custom Length</string>
+    <string name="pref_scan_customWidth">Scan Custom Width</string>
+    <string name="pref_print_size">Print Size</string>
+    <string name="pref_print_customLength">Print Custom Length</string>
+    <string name="pref_print_customWidth">Print Custom Width</string>
+    <string name="pref_background_cleanup">Background Clean Up</string>
+    <string name="pref_contrast_adjustment">Contrast Adjustment</string>
+    <string name="pref_darkness_adjustment">Darkness Adjustment</string>
+    <string name="pref_sharpness_adjustment">Sharpness Adjustment</string>
+    <string name="pref_textGraphicsOptimization">Text/Graphics Optimization</string>
+
+    <string name="pref_collate_mode">Collate Mode</string>
+    <string name="pref_paper_source">Output Tray</string>
+    <string name="pref_scale_mode">Scale Mode</string>
+    <string name="pref_scale_percent">Scale Percent</string>
+    <string name="pref_number_up_mode">Number Up Mode</string>
+    <string name="pref_number_up_direction">Number Up Direction</string>
+    <string name="pref_job_assembly_mode">Job Assembly Mode</string>
+    <string name="pref_output_bin">Output Bin</string>
+    <string name="pref_progress_dialog_mode">Progress Dialog Mode</string>
+    <string name="pref_eraseMarginUnit">Erase Margin Unit</string>
+    <string name="pref_eraseBackMargin">Erase Back Margin</string>
+    <string name="pref_eraseFrontMargin">Erase Front Margin</string>
+    <string name="pref_capture_mode">Capture Mode</string>
+    <string name="pref_image_shift_reduce_to_fit">ImageShift ReduceToFit</string>
+    <string name="pref_image_shift_units">ImageShift Units</string>
+    <string name="pref_image_shift_front">ImageShift Front</string>
+    <string name="pref_image_shift_back">ImageShift Back</string>
+    <string name="pref_booklet_borders_each_page">Booklet Borders EachPage</string>
+    <string name="pref_booklet_finishing_option">Booklet Finishing Option</string>
+    <string name="pref_booklet_format">Booklet Format</string>
+    <string name="pref_Watermark">WaterMark</string>
+    <string name="pref_watermark_text">Watermark Text</string>
+    <string name="pref_watermark_rotation">Watermark Rotate45</string>
+    <string name="pref_watermark_only_firstpage">Watermark Only First Page</string>
+    <string name="pref_watermark_type">Watermark Type</string>
+    <string name="pref_watermark_darkness">Watermark Darkness Range</string>
+    <string name="pref_watermark_message_type">Watermark Message Type</string>
+    <string name="pref_watermark_background_pattern">Watermark Background Pattern</string>
+
+    <string name="pref_watermark_text_size">Watermark TextSize </string>
+    <string name="pref_watermark_transparency">WatermarkTransparency </string>
+    <string name="pref_watermark_only_first_page">Watermark Only First Page</string>
+    <string name="pref_watermark_font">Watermark Text Font</string>
+    <string name="pref_watermark_background_color">Watermark Background color</string>
+    <string name="pref_watermark_text_color">Watermark Text Color</string>
+    <string name="pref_staple_mode">Staple Mode</string>
+    <string name="pref_punch_mode">Punch Mode</string>
+    <string name="pref_fold_mode">Fold Mode</string>
+
+    <string name="pref_monitorJob">Monitoring Job</string>
+    <string name="pref_settingsUi">Settings UI</string>
+    <string name="pref_destination_default">NORMAL</string>
+    <string name="pref_show_job_progress">Show Job Progress</string>
+    <string name="pref_job_name">Job Name</string>
+    <string name="pref_store">Copy To Store Attributes</string>
+    <string name="pref_folder_name">Folder Name</string>
+    <string name="pref_job_delete_on_power">Delete On Power Cycle</string>
+    <string name="pref_job_delete_on_release">Delete on Job Release</string>
+    <string name="pref_job_password_type">Password Type</string>
+    <string name="pref_password">Password</string>
+
+    <string name="pref_stamp">Stamp</string>
+    <string name="pref_stamp_position">Position</string>
+    <string name="pref_stamp_type">Type</string>
+    <string name="pref_stamp_policy_type">Policy Type</string>
+    <string name="pref_stamp_text">Text</string>
+    <string name="pref_stamp_format_font">Font</string>
+    <string name="pref_stamp_format_text_color">Text Color</string>
+    <string name="pref_stamp_format_text_size">Text Size</string>
+    <string name="pref_stamp_format_starting_page">Starting Page</string>
+    <string name="pref_stamp_format_white_background">White Background</string>
+
+    <!-- Messages -->
+    <string name="loaded_caps">Capabilities were loaded and applied to available options</string>
+    <string name="capabilities_not_available">Capabilities are not available</string>
+    <string name="capabilities_not_loaded">Please press \"Get Capabilities\" before submitting a job</string>
+    <string name="stored_job_not_loaded">Please press \"Enumerate\" button</string>
+    <string name="received_complete_intent">Monitoring Job: received Completed intent</string>
+    <string name="no_job_info">No job information</string>
+    <string name="job_stored">Job stored. Press \"Release stored\" to print it or \"Delete stored\" to delete it</string>
+    <string name="title_format">\ [%1$d, %2$d]</string>
+    <string name="title_format_float">\ [%1$.2f, %2$.2f]</string>
+    <string name="hint_job_name">Job Name for stored copy</string>
+    <string name="hint_folder_name">Folder name to store copy job</string>
+    <string name="stored_job_empty">Stored job is empty</string>
+    <string name="succeed">Succeed</string>
+    <string name="range_margin">Margin value must be in range [%1$.2f, %2$.2f]</string>
+    <string name="summary_margin">Left: %1$.2f, Top: %2$.2f, Right: %3$.2f, Bottom: %4$.2f</string>
+    <string name="summary_shift">XShift: %1$.2f, YShift: %2$.2f</string>
+    <string name="range_shift">Shift value must be in range [%1$.2f, %2$.2f]</string>
+    <string name="hint_watermarktext">Watermark text for copy</string>
+    <string name="hint_watermarkback">Watermark background  for copy</string>
+    <string name="hint_watermarktext_color">Watermark text color for copy</string>
+    <string name="hint_watermark_font">Watermark text font for copy</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Supplies Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="service_not_supported">Supplies is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="failed">Failed</string>
+    <string name="error">Error</string>
+
+    <string name="total">Supplies: </string>
+    <string name="number">No.</string>
+    <string name="consumableType">consumableType</string>
+    <string name="approxPercent">approxPercent</string>
+    <string name="get_supplies">Get supplies</string>
+    <string name="no_supply">There is no supply information</string>
+    <string name="over_range">Please enter value within the range</string>
+    <string name="initialized">initialized</string>
+
+    <string name="productNumber_title">productNumber</string>
+
+    <string name="consumableTypeEnum">ConsumableTypeEnum</string>
+    <string name="description">Description</string>
+    <string name="markerColor">MarkerColor</string>
+    <string name="approxPercentRemaining">ApproxPercentRemaining</string>
+    <string name="makeAndModel">MakeAndModel</string>
+    <string name="productNumber">ProductNumber</string>
+    <string name="serialNumber">SerialNumber</string>
+    <string name="maxCapacity">MaxCapacity</string>
+    <string name="unit">Unit</string>
+    <string name="supplyDetails">Supply Details</string>
+</resources>

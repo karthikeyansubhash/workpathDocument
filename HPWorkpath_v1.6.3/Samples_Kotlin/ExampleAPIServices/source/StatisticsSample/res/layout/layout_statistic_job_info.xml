@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layoutJobInfoJobId"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/layoutJobInfoApplicationName"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/layoutJobInfoDeviceJobName"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/layoutJobInfoJobCategory"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/layoutJobInfoJobDataSource"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/layoutJobInfoJobDestinations"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/layoutJobInfoJobDoneStatus"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/xml_border"
+        android:paddingTop="@dimen/layout_top_bottom_margin"
+        android:paddingBottom="@dimen/layout_top_bottom_margin">
+
+        <TextView
+            android:id="@+id/titleJobDoneTimestampTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layoutJobDoneTimestampOffset"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/layoutJobDoneTimestampTime"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layoutJobPaused"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/xml_border"
+        android:paddingTop="@dimen/layout_top_bottom_margin"
+        android:paddingBottom="@dimen/layout_top_bottom_margin">
+
+        <TextView
+            android:id="@+id/titleJobStartedTimestampTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layoutJobStartedTimestampOffset"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/layoutJobStartedTimestampTime"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layoutJobInfoParentJobId"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/layoutJobInfoProcessedBy"
+        layout="@layout/child_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

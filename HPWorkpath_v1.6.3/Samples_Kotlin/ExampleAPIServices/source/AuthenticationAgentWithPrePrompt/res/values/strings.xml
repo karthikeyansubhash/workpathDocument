@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Authentication PrePrompt Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+
+    <!-- UI elements text -->
+    <string name="id">ID</string>
+    <string name="password">Password</string>
+    <string name="generate">Generate</string>
+    <string name="sign_in">Sign In</string>
+    <string name="failed">Fail</string>
+    <string name="canceled">Cancel</string>
+    <string name="home">Home</string>
+    <string name="back">Back</string>
+    <string name="authentication_type">Authentication type</string>
+    <string name="run">Run</string>
+
+    <!-- values -->
+    <string name="bcc_address_email_01">bcc1@address.com</string>
+    <string name="bcc_address_email_02">bcc2@address.com</string>
+    <string name="bcc_address_name_01">bcc1Name</string>
+    <string name="bcc_address_name_02">bcc2Name</string>
+    <string name="cc_address_email_01">cc1@address.com</string>
+    <string name="cc_address_email_02">cc2@address.com</string>
+    <string name="cc_address_name_01">cc1Name</string>
+    <string name="cc_address_name_02">cc2Name</string>
+    <string name="to_address_email_01">to1@address.com</string>
+    <string name="to_address_email_02">to2@address.com</string>
+    <string name="to_address_name_01">to1Name</string>
+    <string name="to_address_name_02">to2Name</string>
+    <string name="from_address_email">from@address.com</string>
+    <string name="from_address_name">fromName</string>
+    <string name="email_message">Email Message</string>
+    <string name="email_subject">Email Subject</string>
+    <string name="fax_billing_code">123456</string>
+    <string name="fax_company_name">faxCompanyName</string>
+    <string name="app_access_point_id">11111111-1111-1111-9992-111111111111</string>
+    <string name="language_code">ko-KR</string>
+    <string name="value_fully_qualified_name">LOCAL\\\\%s</string>
+    <string name="value_domain">LOCAL</string>
+    <string name="value_user_email">%s@hp.com</string>
+    <string name="value_home_folder_path">/home/folder/path</string>
+    <string name="value_user_property_key_01">key1</string>
+    <string name="value_user_property_key_02">key2</string>
+    <string name="value_user_property_value_01">value1</string>
+    <string name="value_user_property_value_02">value2</string>
+</resources>

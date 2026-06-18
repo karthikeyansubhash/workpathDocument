@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+</resources>

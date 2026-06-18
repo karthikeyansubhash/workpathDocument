@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Authorization Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+    <string name="email">Email</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="cc">Cc</string>
+    <string name="bcc">Bcc</string>
+    <string name="name">Name</string>
+    <string name="en_us">en-US</string>
+    <string name="enable">Enable</string>
+    <string name="nullString">Null</string>
+    <string name="description">Description</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="fax_company_name">Fax Company Name</string>
+    <string name="fax_billing_code">Fax Billing Code</string>
+    <string name="guest_permission_set">Guest\nPermission Set</string>
+    <string name="default_sign_in_method">Default Sign-in Method</string>
+    <string name="enable_sign_in_choice">Enable Sign-in Choice</string>
+    <string name="guest_user_overrides">Guest User Overrides</string>
+    <string name="permission_to_sign_in_method_map">Permission\nTo Sign-in Method Map</string>
+    <string name="uuid">UUID</string>
+    <string name="add_new_permission_to_guest_permission_set">Add New Permission To Guest Permission Set</string>
+    <string name="proxy_not_configured">Proxy is not configured</string>
+    <string name="default_config_observer">Default Config Observer</string>
+    <string name="default_config_change">Do you want to change \'Authorization configuration\'?</string>
+    <string name="disable_authorization">Disable Authorization</string>
+    <string name="add">Add</string>
+    <string name="add_mark">+</string>
+    <string name="del_mark">x</string>
+    <string name="address">Address</string>
+    <string name="configuration">CONFIGURATION</string>
+
+    <string name="get_configuration">Get Configuration</string>
+    <string name="set_configuration">Set Configuration</string>
+    <string name="get_permissions">Get Permissions</string>
+    <string name="get_sign_in_methods">Get Sign-in Methods</string>
+
+    <!-- message -->
+    <string name="succeed">Succeed</string>
+    <string name="error">Error</string>
+    <string name="service_not_supported">Authorization Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="address_hint">ex) user@example.com</string>
+    <string name="email_address_empty">Email address is empty</string>
+    <string name="permission_to_sign_in_method_empty">Permission ID or Sign-in Method is empty</string>
+    <string name="permission_to_sign_in_method_exist">Permission ID is already exist</string>
+
+    <!-- country -->
+    <string name="ca_ES">ca-ES</string>
+    <string name="cs_CZ">cs-CZ</string>
+    <string name="da_DK">da-DK</string>
+    <string name="de_DE">de-DE</string>
+    <string name="el_GR">el-GR</string>
+    <string name="es_ES">es-ES</string>
+    <string name="fi_FI">fi-FI</string>
+    <string name="fr_FR">fr-FR</string>
+    <string name="hu_HU">hu-HU</string>
+    <string name="hr_HR">hr-HR</string>
+    <string name="id_ID">id-ID</string>
+    <string name="it_IT">it-IT</string>
+    <string name="ja_JP">ja-JP</string>
+    <string name="ko_KR">ko-KR</string>
+    <string name="nl_NL">nl-NL</string>
+    <string name="nb_NO">nb-NO</string>
+    <string name="pl_PL">pl-PL</string>
+    <string name="pt_BR">pt-BR</string>
+    <string name="ro_RO">ro-RO</string>
+    <string name="ru_RU">ru-RU</string>
+    <string name="sl_SI">sl-SI</string>
+    <string name="sk_SK">sk-SK</string>
+    <string name="sv_SE">sv-SE</string>
+    <string name="th_TH">th-TH</string>
+    <string name="tr_TR">tr-TR</string>
+    <string name="zh_CN">zh-CN</string>
+    <string name="zh_TW">zh-TW</string>
+    <string name="he_IL">he-IL</string>
+    <string name="ar_SA">ar-SA</string>
+
+    <!-- values -->
+    <string name="bcc_address_email_01">bcc1@address.com</string>
+    <string name="bcc_address_email_02">bcc2@address.com</string>
+    <string name="bcc_address_name_01">bcc1Name</string>
+    <string name="bcc_address_name_02">bcc2Name</string>
+    <string name="cc_address_email_01">cc1@address.com</string>
+    <string name="cc_address_email_02">cc2@address.com</string>
+    <string name="cc_address_name_01">cc1Name</string>
+    <string name="cc_address_name_02">cc2Name</string>
+    <string name="to_address_email_01">to1@address.com</string>
+    <string name="to_address_email_02">to2@address.com</string>
+    <string name="to_address_name_01">to1Name</string>
+    <string name="to_address_name_02">to2Name</string>
+    <string name="from_address_email">from@address.com</string>
+    <string name="from_address_name">fromName</string>
+    <string name="email_message">Email Message</string>
+    <string name="email_subject">Email Subject</string>
+    <string name="email_fax_billing_code">123456</string>
+    <string name="email_fax_company_name">faxCompanyName</string>
+    <string name="app_access_point_id">11111111-1111-1111-9992-111111111111</string>
+    <string name="language_code">ko-KR</string>
+    <string name="value_fully_qualified_name">LOCAL\\\\%s</string>
+    <string name="value_domain">LOCAL</string>
+    <string name="value_user_email">%s@hp.com</string>
+    <string name="value_home_folder_path">/home/folder/path</string>
+    <string name="value_user_property_key_01">key1</string>
+    <string name="value_user_property_key_02">key2</string>
+    <string name="value_user_property_value_01">value1</string>
+    <string name="value_user_property_value_02">value2</string>
+</resources>

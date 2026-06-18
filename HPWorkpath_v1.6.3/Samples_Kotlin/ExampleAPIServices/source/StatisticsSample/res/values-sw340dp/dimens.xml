@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="adapter_height">30dp</dimen>
+    <dimen name="button_margin">4dp</dimen>
+    <dimen name="button_padding">4dp</dimen>
+    <dimen name="buttonbar_height">40dp</dimen>
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="tablayout_height">40dp</dimen>
+    <dimen name="button_height">38dp</dimen>
+    <dimen name="button_textsize">12sp</dimen>
+    <dimen name="height_0">0dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+    <dimen name="dialog_textheight">38dp</dimen>
+
+</resources>

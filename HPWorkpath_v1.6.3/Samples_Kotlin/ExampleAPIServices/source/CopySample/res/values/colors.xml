@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_clicked">#e6e6e6</color>
+    <color name="preference_summary_color">#a6a6a6</color>
+    <color name="snackbar_button_color">#cccccc</color>
+    <color name="line">#cbcbcb</color>
+</resources>

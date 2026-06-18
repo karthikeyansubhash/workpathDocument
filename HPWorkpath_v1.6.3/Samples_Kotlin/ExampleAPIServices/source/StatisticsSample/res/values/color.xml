@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_clicked">#e6e6e6</color>
+    <color name="option_background_color">#edeeee</color>
+    <color name="snackbar_button_color">#cccccc</color>
+    <color name="buttonbar_color">#B9CBCBCB</color>
+    <color name="action_bar_color">#F5F5F5</color>
+    <color name="footer_text_color">#06877A</color>
+
+</resources>

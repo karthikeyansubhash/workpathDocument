@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Etkinleştirmek için dokunun.(tr-TR)</string>
+    <string name="sub_app_name">Etkinleştirmek için dokunun. (Sub)(tr-TR)</string>
+    <string name="config_app_name">Etkinleştirmek için dokunun. (Config)(tr-TR)</string>
+
+    <string name="description">Sistem ayarları &gt; Uygulamalar &gt; İndirilen bölümünden varsayılanı temizleyin.</string>
+    <string name="button">Giriş yöntemini seçin</string>
+    <string name="message"><xliff:g id="SESSION">%s</xliff:g> oturumuna bağlandı. Ağı yönetmek için dokunun.</string>
+</resources>

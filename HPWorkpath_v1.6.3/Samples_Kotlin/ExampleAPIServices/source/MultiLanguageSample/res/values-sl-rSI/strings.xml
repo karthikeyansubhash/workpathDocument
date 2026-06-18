@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Dotaknite se, da omogočite.(sl-SI)</string>
+    <string name="sub_app_name">Dotaknite se, da omogočite. (Sub)(sl-SI)</string>
+    <string name="config_app_name">Dotaknite se, da omogočite. (Config)(sl-SI)</string>
+
+    <string name="description">Izbrišite privzeti program v sistemskih nastavitvah &gt; Programi &gt; Preneseno.</string>
+    <string name="button">Izberite način vnosa</string>
+    <string name="message">Vzpostavljena povezava s sejo <xliff:g id="SESSION">%s</xliff:g>. Dotaknite se, če želite upravljati omrežje.</string>
+</resources>

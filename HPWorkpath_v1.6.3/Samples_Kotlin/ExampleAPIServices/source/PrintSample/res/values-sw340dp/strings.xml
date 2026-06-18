@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="load_caps_button">Capabilities</string>
+    <string name="load_defaults_button">Defaults</string>
+    <string name="getjobinfo_button">Job Info</string>
+</resources>

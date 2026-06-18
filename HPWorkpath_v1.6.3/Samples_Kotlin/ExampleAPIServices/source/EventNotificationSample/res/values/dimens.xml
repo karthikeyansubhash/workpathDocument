@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="child_margin">6dp</dimen>
+    <dimen name="child_padding_start">8dp</dimen>
+
+    <dimen name="event_info_text_size">20sp</dimen>
+</resources>

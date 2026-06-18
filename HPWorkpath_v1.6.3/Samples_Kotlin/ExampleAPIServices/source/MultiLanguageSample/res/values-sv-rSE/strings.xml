@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Tryck om du vill aktivera.(sv-SE)</string>
+    <string name="sub_app_name">Tryck om du vill aktivera. (Sub)(sv-SE)</string>
+    <string name="config_app_name">Tryck om du vill aktivera. (Config)(sv-SE)</string>
+
+    <string name="description">Rensa standardinställningar i Systeminställningar &gt; Appar &gt; Hämtat.</string>
+    <string name="button">Välj inmatningsmetod</string>
+    <string name="message">Ansluten till <xliff:g id="SESSION">%s</xliff:g>. Knacka lätt om du vill hantera nätverket.</string>
+</resources>

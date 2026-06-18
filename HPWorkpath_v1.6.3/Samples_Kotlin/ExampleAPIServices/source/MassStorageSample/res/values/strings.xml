@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Mass Storage Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="service_not_supported">Mass Storage Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="no_file">File is not found</string>
+    <string name="exist_file">The file exists</string>
+    <string name="not_loaded_storage_list">Please press \"Get storage list\" first</string>
+    <string name="mass_storage">Mass Storage</string>
+    <string name="onchange_event_message">onChange() event is received</string>
+    <string name="unplugged_storage">Unplugged %1$s</string>
+    <string name="plugged_storage">Plugged %1$s</string>
+    <string name="succeed">Succeed</string>
+    <string name="no_storage">No storage</string>
+    <string name="input_value">Please input value</string>
+    <string name="there_is_no_file">No file</string>
+    <string name="initialized">initialized</string>
+
+    <string name="get_storage_list">Get storage list</string>
+    <string name="create_file">Create file</string>
+    <string name="rename_file">Rename file</string>
+    <string name="read_file">Read file</string>
+    <string name="delete">Delete</string>
+    <string name="new_file">New file</string>
+    <string name="create_new_file">Create New file</string>
+    <string name="create">Create</string>
+    <string name="rename">Rename</string>
+    <string name="storage_list">Storage List</string>
+    <string name="storage_information">Storage Information</string>
+    <string name="external_file_directory">Path (External file directory)</string>
+    <string name="name">Name</string>
+    <string name="volume_name">Volume name</string>
+    <string name="mounted">Is mounted</string>
+    <string name="protocol">Protocol</string>
+    <string name="type">Type</string>
+    <string name="free_space">Free space</string>
+    <string name="total_space">Total space</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="file">File</string>
+    <string name="directory">Directory</string>
+    <string name="modified_date">Modified Date</string>
+    <string name="size">Size</string>
+    <string name="path_name">Path name</string>
+    <string name="length">Length</string>
+    <string name="last_modified">Last Modified</string>
+    <string name="hint_for_create_file">Input your text</string>
+
+    <string name="sucess_and_fail">File deletion successful (%d),  file deletion failure (%d)</string>
+    <string name="file_info">File Info</string>
+    <string name="loading">......</string>
+    <string name="select">Select</string>
+</resources>

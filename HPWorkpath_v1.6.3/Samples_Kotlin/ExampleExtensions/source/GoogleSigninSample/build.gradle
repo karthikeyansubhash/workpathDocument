@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 31
+	
+    defaultConfig {
+        minSdkVersion 31
+        targetSdkVersion 31
+		
+        applicationId "com.hp.workpath.sample.googlesigninsample"
+		
+        versionName "1.6.3 (20251111)"
+        versionCode 17
+		
+        multiDexEnabled true
+    }
+	
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+    implementation 'com.google.code.gson:gson:2.11.0'
+    implementation('com.google.api-client:google-api-client:1.23.1') {
+        exclude group: 'com.google.code.gson'
+        exclude group: 'com.google.guava'
+        exclude group: 'commons-logging'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
+    implementation('com.google.apis:google-api-services-drive:v3-rev99-1.23.0') {
+        exclude group: 'com.google.guava'
+        exclude group: 'commons-logging'
+        exclude group: 'org.apache.httpcomponents', module: 'httpclient'
+    }
+    implementation('com.squareup.okhttp3:okhttp:3.8.+') {
+        exclude group: 'com.google.guava'
+    }
+}

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:tag="default">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|end">
+
+            <!-- Header item -->
+            <include
+                android:id="@+id/headerUserInfo"
+                layout="@layout/header_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Child items list -->
+            <include
+                android:id="@+id/childUserName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childFullyQualifiedName"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childPrincipalId"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childDomain"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childProvider"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <include
+                android:id="@+id/childIsAuthenticated"
+                layout="@layout/child_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight" />
+
+            <!-- Header item -->
+            <include
+                android:id="@+id/headerSignInAction"
+                layout="@layout/header_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/signInActionSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:entries="@array/sign_in_action_arrays" />
+
+                <Button
+                    android:id="@+id/signInActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/button_margin"
+                    android:paddingRight="@dimen/button_margin"
+                    android:text="@string/set_action"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+</RelativeLayout>

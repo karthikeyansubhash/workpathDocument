@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Sentuh untuk mengaktifkan.(id-ID)</string>
+    <string name="sub_app_name">Sentuh untuk mengaktifkan. (Sub)(id-ID)</string>
+    <string name="config_app_name">Sentuh untuk mengaktifkan. (Config)(id-ID)</string>
+
+    <string name="description">Menghapus bawaan di Setelan sistem &gt; Apl &gt; Terunduh.</string>
+    <string name="button">Pilih metode masukan</string>
+    <string name="message">Tersambung ke <xliff:g id="SESSION">%s</xliff:g>. Sentuh untuk mengelola jaringan.</string>
+</resources>

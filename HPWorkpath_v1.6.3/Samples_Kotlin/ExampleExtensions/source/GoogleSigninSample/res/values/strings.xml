@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Google Sign in Sample</string>
+    <string name="action_settings">Settings</string>
+    <string name="load">Load</string>
+    <string name="revoke">Revoke</string>
+    <string name="check">Check</string>
+    <string name="refresh">Refresh</string>
+    <string name="google_drive_file_list">Google drive file list</string>
+    <string name="token">Token</string>
+    <string name="empty">(Empty)</string>
+    <string name="no_file">No file</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="mimeType">mimeType</string>
+    <string name="step_1">Step 1. Loads google sign in page</string>
+    <string name="step_2">Step 2. Verify token</string>
+    <string name="step_3">Step 3. Refresh token</string>
+    <string name="step_4">Step 4. Revoke token</string>
+    <string name="json_client_id">Please input your client_id</string>
+    <string name="json_redirect_uri">Please input redirect_uri</string>
+</resources>

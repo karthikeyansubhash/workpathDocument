@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Device Information Sample</string>
+    <string name="version">VERSION: %1$s / %2$d, API: %3$s / %4$d</string>
+
+    <string name="service_not_supported">Device Service is not supported</string>
+    <string name="sdk_support_missing">Please install / update HP Workpath SDK Services application to proceed</string>
+    <string name="unknown_error">Unexpected error:</string>
+    <string name="device_is_not_connected">Device is not connected</string>
+    <string name="permission_not_granted">Permission is not granted, please reinstall the app!</string>
+    <string name="service_failed">Failed to get device information</string>
+    <string name="system_language_caps_failed">Failed to get language capabilities</string>
+    <string name="enable_ports_deprecated">This method is no longer supported due to security reasons.</string>
+
+    <!-- UI elements text -->
+    <string name="read_device_props">Get Information</string>
+    <string name="info">Device information</string>
+    <string name="model_name">Model</string>
+    <string name="host_name">Hostname</string>
+    <string name="network_address">Network address</string>
+    <string name="features">Features</string>
+    <string name="firmware_version">Firmware version</string>
+    <string name="device_id">Device ID</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="system_language">System Language</string>
+    <string name="system_language_capability">System Language Capability</string>
+    <string name="asset_number">Asset Number</string>
+    <string name="company_contact">Company Contact</string>
+    <string name="company_name">Company Name</string>
+    <string name="device_location">Device location</string>
+    <string name="machine_name">Machine Name</string>
+    <string name="future_smart_level">HP FutureSmart Level</string>
+    <string name="set_system_language">Set System Language</string>
+    <string name="goHome">Go Home</string>
+    <string name="enablePrinting">Enable Ports\n(Deprecated)</string>
+    <string name="disablePrinting">Disable Ports</string>
+
+    <string name="model_value">%1$s (Vendor: %2$s)</string>
+    <string name="address_value">%1$s (MAC: %2$s)</string>
+    <string name="device_id_value">%1$s (Product Number: %2$s)</string>
+    <string name="serial_number_value">%1$s (Formatter S/N: %2$s)</string>
+    <string name="na">N/A</string>
+    <string name="supported">Supported</string>
+    <string name="notsupported">Not supported</string>
+
+    <!-- Messages -->
+    <string name="support_apk_not_installed">Not installed!</string>
+    <string name="select_printer">Select device</string>
+    <string name="is_scanner">Is Scanner?</string>
+    <string name="not_connected">No connected device</string>
+    <string name="disabled">Disabled</string>
+    <string name="value_true">True</string>
+    <string name="value_false">False</string>
+</resources>

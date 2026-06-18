@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:key="source_category"
+        android:order="1"
+        android:title="@string/pref_source"
+        android:layout="@layout/layout_preference"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_Source_default"
+            android:dialogTitle="@string/pref_source"
+            android:entries="@array/pref_Source_entries"
+            android:entryValues="@array/pref_Source_entries"
+            android:key="pref_source"
+            android:order="1"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_source"
+            app:iconSpaceReserved="false"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="source_storage_category"
+        android:order="2"
+        android:layout="@layout/layout_preference"
+        app:allowDividerBelow="true"
+        android:title="@string/pref_source_storage"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            android:dialogTitle="@string/pref_filename"
+            android:inputType="textNoSuggestions"
+            android:key="pref_filename"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_filename"
+            app:iconSpaceReserved="false"/>
+
+        <androidx.preference.Preference
+            android:inputType="textNoSuggestions"
+            android:key="pref_copy_test_page"
+            android:layout="@layout/layout_sub_option"
+            android:summary="@string/pref_copy_test_page"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="source_http_category"
+        android:order="3"
+        android:layout="@layout/layout_preference"
+        android:title="@string/pref_source_http"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri"
+            android:inputType="textNoSuggestions"
+            android:key="pref_uri"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_uri"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_uri_username"
+            android:inputType="textNoSuggestions"
+            android:key="pref_uri_username"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_uri_username"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogLayout="@layout/layout_edit_text_password"
+            android:dialogTitle="@string/pref_uri_password"
+            android:key="pref_uri_password"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_uri_password"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="source_usb_category"
+        android:order="3"
+        android:layout="@layout/layout_preference"
+        android:title="@string/pref_source_usb"
+        app:iconSpaceReserved="false" >
+
+        <androidx.preference.ListPreference
+            android:dialogTitle="@string/pref_usb_storage"
+            android:entries="@array/pref_empty_entries"
+            android:entryValues="@array/pref_empty_entries"
+            android:key="pref_usb_storage"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_usb_storage"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_usb_filename"
+            android:inputType="textNoSuggestions"
+            android:key="pref_usb_filename"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_usb_filename"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="source_stream_category"
+        android:order="4"
+        android:layout="@layout/layout_preference"
+        android:title="@string/pref_source_stream"
+        app:iconSpaceReserved="false" >
+
+        <androidx.preference.Preference
+            android:dialogTitle="@string/pref_stream_filename"
+            android:inputType="textNoSuggestions"
+            android:key="pref_stream_filename"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_stream_filename"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            android:inputType="textNoSuggestions"
+            android:key="pref_stream_copy_test_page"
+            android:layout="@layout/layout_sub_option"
+            android:summary="@string/pref_copy_test_page"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:order="5"
+        android:layout="@layout/layout_preference"
+        android:title="@string/category_attrs"
+        app:iconSpaceReserved="false">
+
+        <com.hp.workpath.sample.printsample.fragments.EditTextIntegerPreference
+            android:defaultValue="1"
+            android:dialogLayout="@layout/layout_edit_text_integer"
+            android:dialogTitle="@string/pref_copies"
+            android:layout="@layout/sub_layout_preference"
+            android:key="pref_copies"
+            android:title="@string/pref_copies"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_color_mode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_colorMode"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_color_mode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_duplex_mode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_duplexMode"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_duplex_mode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_autoFit"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_autoFit"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_autoFit"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_staple_mode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_stapleMode"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_staple_mode"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_paper_source"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_paperSource"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_paper_source"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_paper_size"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_paperSize"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_paper_size"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_paper_type"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_paperType"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_paper_type"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_auto_value"
+            android:dialogTitle="@string/pref_doc_format"
+            android:entries="@array/pref_auto_entries"
+            android:entryValues="@array/pref_auto_entries"
+            android:key="pref_documentFormat"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_doc_format"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_collate_mode"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_collateMode"
+            android:title="@string/pref_collate_mode"
+            android:layout="@layout/sub_layout_preference"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogTitle="@string/pref_job_name"
+            android:inputType="textNoSuggestions"
+            android:key="pref_jobName"
+            android:title="@string/pref_job_name"
+            android:layout="@layout/sub_layout_preference"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_orientation"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_orientation"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_orientation"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_print_quality"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_print_quality"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_print_quality"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.ListPreference
+            android:defaultValue="@string/pref_default_value"
+            android:dialogTitle="@string/pref_output_bin"
+            android:layout="@layout/sub_layout_preference"
+            android:entries="@array/pref_default_entries"
+            android:entryValues="@array/pref_default_entries"
+            android:key="pref_output_bin"
+            android:title="@string/pref_output_bin"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogLayout="@layout/layout_edit_text_integer"
+            android:dialogTitle="@string/pref_start_pageRanges"
+            android:key="pref_start_pageRanges"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_start_pageRanges"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.EditTextPreference
+            android:dialogLayout="@layout/layout_edit_text_integer"
+            android:dialogTitle="@string/pref_end_pageRanges"
+            android:key="pref_end_pageRanges"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_end_pageRanges"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.MultiSelectListPreference
+            app:defaultValue="@array/pref_default_entries"
+            android:dialogTitle="@string/pref_finishings"
+            app:entries="@array/pref_default_entries"
+            app:entryValues="@array/pref_default_entries"
+            android:key="pref_finishings"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_finishings"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:order="5"
+        android:layout="@layout/layout_preference"
+        android:title="@string/category_feedback"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_monitoringJob"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_monitoring_job"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_showJobProgress"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_show_job_progress"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_showSettings"
+            android:layout="@layout/sub_layout_preference"
+            android:title="@string/pref_show_settings"
+            app:allowDividerAbove="true"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="scanner_status_category"
+        android:order="6"
+        android:layout="@layout/layout_preference"
+        android:title="@string/category_print_status"
+        app:iconSpaceReserved="false">
+
+        <com.hp.workpath.sample.printsample.fragments.StatusPreference
+            android:key="pref_scanner_status"
+            android:widgetLayout="@layout/layout_printer_status"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="scanner_status_category"
+        android:order="7"
+        android:layout="@layout/layout_preference"
+        android:title="@string/category_tray_status"
+        app:iconSpaceReserved="false" >
+
+        <com.hp.workpath.sample.printsample.fragments.TrayInfoPreference
+            android:key="pref_scanner_status"
+            android:layout="@layout/layout_tray_status"
+            app:iconSpaceReserved="false"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

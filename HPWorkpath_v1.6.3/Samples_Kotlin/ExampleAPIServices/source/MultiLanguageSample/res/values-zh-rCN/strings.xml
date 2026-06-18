@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">触摸以启用。(zh-CN)</string>
+    <string name="sub_app_name">触摸以启用。(Sub)(zh-CN)</string>
+    <string name="config_app_name">触摸以启用。(Config)(zh-CN)</string>
+
+    <string name="description">在“系统设置”&gt;“应用程序”&gt;“已下载”中清除默认设置。</string>
+    <string name="button">选择输入法</string>
+    <string name="message">已连接到“<xliff:g id="SESSION">%s</xliff:g>”。触摸可管理网络。</string>
+</resources>

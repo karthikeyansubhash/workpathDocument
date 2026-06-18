@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Toca per activar.(ca-ES)</string>
+    <string name="sub_app_name">Toca per activar. (Sub)(ca-ES)</string>
+    <string name="config_app_name">Toca per activar. (Config)(ca-ES)</string>
+
+    <string name="description">Esborra els paràmetres predeterminats a Configuració del sistema &gt; Aplicacions &gt; Baixades.</string>
+    <string name="button">Selecció de mètodes d\'introducció</string>
+    <string name="message">Connectat a <xliff:g id="SESSION">%s</xliff:g>. Toca per gestionar la xarxa.</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Trykk for å aktivere.(nb-NO)</string>
+    <string name="sub_app_name">Trykk for å aktivere. (Sub)(nb-NO)</string>
+    <string name="config_app_name">Trykk for å aktivere. (Config)(nb-NO)</string>
+
+    <string name="description">Fjern app angitt som standard i systeminnstillingene &gt; Apper &gt; Nedlastet.</string>
+    <string name="button">Velg inndatametode</string>
+    <string name="message">Koblet til <xliff:g id="SESSION">%s</xliff:g>. Trykk for å administrere nettverket.</string>
+</resources>
